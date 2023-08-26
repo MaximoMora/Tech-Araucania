@@ -1,0 +1,18 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0rem 15rem 0rem 15rem;
+}
+
+.header-container {
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+    margin: 0 0 0 0;
+    padding: 1rem;
+}
+
+#main-title {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
