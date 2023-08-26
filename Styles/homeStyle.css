@@ -20,6 +20,7 @@ body {
 .nav-container {
     border-color: rgb(49, 49, 49);
     border-style: solid;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 .a-container {
@@ -32,6 +33,12 @@ body {
     font-size: 1.5rem;
     color: rgb(49, 49, 49);
     text-decoration: none;
+
+}
+
+.a-container a:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
 }
 
 .main-header-container {

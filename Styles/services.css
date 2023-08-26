@@ -33,3 +33,21 @@ body {
     color: rgb(49, 49, 49);
     text-decoration: none;
 }
+
+.main-resume-container {
+    margin: 2rem;
+    display: flex;
+}
+
+.main-category-container {
+    margin: 2rem 0rem 2rem 0rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-container {
+    border-style:solid;
+    border-color: rgb(49, 49, 49);
+    padding: 1rem ;
+
+}
