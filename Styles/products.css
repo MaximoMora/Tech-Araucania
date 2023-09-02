@@ -115,8 +115,6 @@ body {
     flex-wrap: nowrap;
     overflow: scroll;
     margin: 1rem;
-    justify-content: center;
-    align-items: center;
 }
 
 .elemento {
@@ -124,6 +122,5 @@ body {
     margin: 0 10px;
     width: 400px;
     height: 400px;
-    display: block;
-    margin-right: 10rem;
+    background-color: gray;
 }
