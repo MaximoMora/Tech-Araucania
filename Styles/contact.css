@@ -40,7 +40,7 @@ body {
 
 #search-icon {
     margin: 1rem;
-    background-color:;
+
 }
 
 .nav-container {
@@ -81,7 +81,9 @@ body {
 }
 
 .main-content {
+    margin: 5rem 0rem;
     display: flex;
+    justify-content: space-around;
 }
 
 .footer-container {

@@ -74,10 +74,17 @@ body {
     justify-content: space-around;
 }
 
-.main-content-title-container{
-    display: flex;
-    align-items: center;
+.main-content-container {
+    display: block;
 
+}
+.main-content-container h1 {
+    text-align: center;
+
+}
+
+.main-content-text-containe {
+    text-align: center;
 }
 
 
