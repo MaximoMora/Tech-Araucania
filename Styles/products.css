@@ -114,12 +114,12 @@ body {
     display: flex;
     flex-wrap: nowrap;
     overflow: scroll;
+    margin: 0rem 0.5rem;
 }
 
 .elemento {
     flex: 1 0 auto;
     margin: 0 50px;
-    background-color: yellow;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
