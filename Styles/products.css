@@ -33,3 +33,46 @@ body {
     color: rgb(49, 49, 49);
     text-decoration: none;
 }
+
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+#categoria {
+    background-color: #C69749;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.categoria h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.producto a {
+    color: #333;
+    font-weight: bold;
+}
+
+.producto a:hover {
+    color: #ff6600;
+}
