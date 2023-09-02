@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0rem 15rem 0rem 15rem;
+}
+
+.header-container {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+    margin: 0 0 0 0;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+
+
+#header-title {
+    color: rgb(255, 255, 255);
+}
+
+
+#user-icon {
+    margin: 1rem;
+}
+
+#shop-icon {
+    margin: 1rem;
+}
+
+.search-container {
+    padding: 0rem 4rem;
+    display: flex;
+}
+
+#search-bar {
+    margin: 1rem 0rem;
+
+    padding: 0rem 10rem;
+
+}
+
+#search-icon {
+    margin: 1rem;
+
+
+}
+
+.nav-container {
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.a-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.a-container a {
+    font-size: 1.5rem;
+    color: rgb(49, 49, 49);
+    text-decoration: none;
+
+}
+
+.a-container a:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+.footer-container {
+    background-color: rgb(49, 49, 49);
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-container  a {
+    color: white;
+    display: flex;
+    margin: 1rem;
+    text-decoration: none;
+}

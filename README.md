@@ -1,2 +1,2 @@
 # Tech-Araucania
-Primer avanze de proyecto
+Primer avanze del proyecto
