@@ -79,3 +79,22 @@ body {
     align-items: center;
 
 }
+
+.main-content {
+    display: flex;
+}
+
+.footer-container {
+    background-color: rgb(49, 49, 49);
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-container  a {
+    color: white;
+    display: flex;
+    margin: 1rem;
+    text-decoration: none;
+}
