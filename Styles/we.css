@@ -92,6 +92,35 @@ body {
     flex-direction: row;
 }
 
+
+
+
+.main-container {
+    display: flex;
+    margin: 5rem 0rem;
+    justify-content: space-around;
+}
+
+.main-content-container {
+    display: block;
+
+}
+.main-content-container h1 {
+    text-align: center;
+}
+.main-content-container a {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+.main-content-text-containe {
+    text-align: center;
+}
+
+
+
+
 .footer-container {
     background-color: rgb(49, 49, 49);
     padding: 1rem ;

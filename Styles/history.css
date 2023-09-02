@@ -65,6 +65,16 @@ body {
 
 }
 
+.main-content-title-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-resume-container {
+    margin: 3rem;
+    display: flex;
+}
+
 .a-container a:hover {
     background-color: rgb(49, 49, 49);
     color: white;
