@@ -126,14 +126,20 @@ body {
     margin: 1rem;
 }
 
+
+
 .elemento {
     flex: 1 0 auto;
     margin: 0 10px;
     width: 400px;
     height: 400px;
-    background-color: gray;
 }
 
+.elemento:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    cursor: pointer; 
+  }
 .footer-container {
     background-color: rgb(49, 49, 49);
     padding: 1rem ;
