@@ -5,21 +5,48 @@ body {
 }
 
 .header-container {
+    display: flex;
     color: rgb(255, 255, 255);
     background-color: rgb(49, 49, 49);
     margin: 0 0 0 0;
     padding: 1rem;
+    justify-content: space-around;
 }
 
-#main-title {
+
+
+#header-title {
     color: rgb(255, 255, 255);
+}
+
+
+#user-icon {
+    margin: 1rem;
+}
+
+#shop-icon {
+    margin: 1rem;
+}
+
+.search-container {
+
     display: flex;
-    justify-content: center;
+}
+
+#search-bar {
+    margin: 1rem 0rem;
+    padding: 0rem 3rem;
+}
+
+#search-icon {
+    margin: 1rem;
+    background-color:;
 }
 
 .nav-container {
     border-color: rgb(49, 49, 49);
     border-style: solid;
+    margin: 0rem 0rem 1rem 0rem;
 }
 
 .a-container {
@@ -32,6 +59,7 @@ body {
     font-size: 1.5rem;
     color: rgb(49, 49, 49);
     text-decoration: none;
+<<<<<<< HEAD
 }
 
 .catalogo {
@@ -76,3 +104,12 @@ body {
 .producto a:hover {
     color: #ff6600;
 }
+=======
+
+}
+
+.a-container a:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+>>>>>>> c5f3c7257b2795ffc5dce4f1aa75cea41fb4c3f9
