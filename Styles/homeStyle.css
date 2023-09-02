@@ -2,6 +2,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0rem 15rem 0rem 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 25% top 30%;
+    
 }
 
 .header-container {
@@ -55,6 +59,7 @@ body {
 .a-container {
     display: flex;
     justify-content: space-evenly;
+    background-color: black;
     
 }
 
@@ -62,6 +67,7 @@ body {
     font-size: 1.5rem;
     color: rgb(49, 49, 49);
     text-decoration: none;
+    color: white;
 
 }
 
@@ -81,6 +87,9 @@ body {
     display: block;
 
 }
+.main-content-title-containe{
+    color: white;
+}
 .main-content-container h1 {
     text-align: center;
 
@@ -88,6 +97,7 @@ body {
 
 .main-content-text-containe {
     text-align: center;
+    color: white;
 }
 
 

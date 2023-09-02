@@ -2,6 +2,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0rem 15rem 0rem 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 25% top 30%;
 }
 
 .header-container {
@@ -55,13 +58,14 @@ body {
 .a-container {
     display: flex;
     justify-content: space-evenly;
+    background-color: black;
     
 }
 
 .a-container a {
     font-size: 1.5rem;
-    color: rgb(49, 49, 49);
     text-decoration: none;
+    color: white;
 
 }
 
@@ -91,6 +95,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
+    color: white;
 }
 
 .main-category-container {
@@ -116,6 +121,7 @@ body {
     border-color: rgb(49, 49, 49);
     padding: 4rem 4rem ;
     margin: 1rem 0rem;
+    color: white;
 
 }
 
@@ -130,6 +136,7 @@ body {
     margin: 1rem 1rem;
     display: flex;
     align-items: center;
+    color: white;
 }
 
 

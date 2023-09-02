@@ -2,6 +2,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0rem 15rem 0rem 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left 25% top 30%;
 }
 
 .header-container {
@@ -13,6 +16,9 @@ body {
     justify-content: space-around;
 }
 
+main{
+    color: white;
+}
 
 
 #header-title {
@@ -55,12 +61,13 @@ body {
 .a-container {
     display: flex;
     justify-content: space-evenly;
+    background-color: black;
     
 }
 
 .a-container a {
     font-size: 1.5rem;
-    color: rgb(49, 49, 49);
+    color: white;
     text-decoration: none;
 
 }
