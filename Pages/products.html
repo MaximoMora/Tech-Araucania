@@ -102,6 +102,9 @@
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="Products/Ventilador.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
                 <img 
+                  id="product-photo-1"
+                  onmouseover="OnMouseOver('product-photo-1')"
+                  onmouseout="OutMouseOver('product-photo-1')"
                   alt="ventilador"
                   height="200"
                   src="../Images/Products/ventilador.webp"
@@ -112,7 +115,11 @@
             </div>
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="../Pages/Products/Tarjeta.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
-                <img alt="cpu" height="200" src="../Images/Products/cpu.webp" /><br />
+                <img
+                id="product-photo-2"
+                onmouseover="OnMouseOver('product-photo-2')"
+                onmouseout="OutMouseOver('product-photo-2')" 
+                alt="cpu" height="200" src="../Images/Products/cpu.webp" /><br />
                 Tarjeta Grafica AMD Ryzen<br /> <!--Nombre del producto-->
                 <h3 style="color: white">$35.990</h3> <!--Precio-->
               </a>
@@ -124,6 +131,9 @@
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="Products/audifonos.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
                 <img
+                  id="product-photo-3"
+                  onmouseover="OnMouseOver('product-photo-3')"
+                  onmouseout="OutMouseOver('product-photo-3')" 
                   alt="audifonos"
                   height="200"
                   src="../Images/Products/audi.jpg"
@@ -134,7 +144,14 @@
             </div>
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="Products/Mouse.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+                <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+                a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+                 a su estado normal-->
                 <img
+                  id="product-photo-4"
+                  onmouseover="OnMouseOver('product-photo-4')"
+                  onmouseout="OutMouseOver('product-photo-4')" 
+
                   alt="maus"
                   height="200"
                   src="../Images/Products/mausito.jpg"
@@ -149,7 +166,13 @@
             <h3>Mantenimiento</h3> <!--Titulo de seccion-->
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="Products/Limpiador.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
-                <img
+                <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+                a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+                 a su estado normal-->
+                <img 
+                  id="product-photo-5"
+                  onmouseover="OnMouseOver('product-photo-5')" 
+                  onmouseout="OutMouseOver('product-photo-5')" 
                   alt="limpiador"
                   height="200"
                   src="../Images/Products/limpiador.jpg"
@@ -160,7 +183,14 @@
             </div>
             <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
               <a href="Products/Pasta.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
-                <img alt="pasta" height="200" src="../Images/Products/pasta.jpg" /><br />
+                <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+                a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+                 a su estado normal-->
+                <img
+                 id="product-photo-6"
+                 onmouseover="OnMouseOver('product-photo-6')"
+                 onmouseout="OutMouseOver('product-photo-6')" 
+                 alt="pasta" height="200" src="../Images/Products/pasta.jpg" /><br />
                 Pasta Termica<br /> <!--Nombre del producto-->
                 <h3 style="color: white">$10.000</h3> <!--Precio-->
               </a>
@@ -173,6 +203,9 @@
       <div class="carrusel"> <!--Clase con las propiedades del carrusel-->
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
           <a href="Products/VentiladorPort.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+            <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+            a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+            a su estado normal-->
           <img src="../Images/Products/cama.jpg" alt="" width="400" height="400" /> 
           <br />
           </a>
@@ -182,6 +215,9 @@
 
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
         <a href="Products/joystick.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+          <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+          a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+          a su estado normal-->
         <img
           src="../Images/Products/joystick-arcade.jpg"
           alt=""
@@ -196,6 +232,10 @@
        
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
         <a href="Products/Destornillador.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+
+          <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+          a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+          a su estado normal-->
         <img
           src="../Images/Products/destornillador.jpg"
           alt=""
@@ -209,6 +249,9 @@
 
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
         <a href="Products/ps5.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+        <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+        a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+        a su estado normal-->
         <img src="../Images/Products/ps5.jpg" alt="" width="400" height="400" />
         Joystick PlayStation 5 <br /> <!--Nombre del producto-->
         <h3 style="color: white">$7.990</h3> <!--Precio-->
@@ -217,6 +260,9 @@
 
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
         <a href="Products/TECLADO.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+        <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+        a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+        a su estado normal-->
         <img src="../Images/Products/tecladin.jpg" alt="" width="400" height="400" />
         Teclado Gamer <br /> <!--Nombre del producto-->
         <h3 style="color: white">$28.990</h3> <!--Precio-->
@@ -225,6 +271,9 @@
 
         <div class="elemento"> <!--Div que tendra las propiedades de cada Producto Del carrusel, imagen, precio etc-->
         <a href="Products/Silla.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
+        <!--La imagen tiene un id que nos servira que cuando el mouse pase por encima llamara
+        a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
+        a su estado normal-->
         <img src="../Images/Products/silla.png" alt="" width="400" height="400" />
         Silla Gamer <br /> <!--Nombre del producto-->
         <h3 style="color: white">$128.990</h3> <!--Precio-->
@@ -318,16 +367,29 @@
           </div>
         </div>
         <div>
-          <h3>Productos</h3>
-        </div>
-        <div>
+          <!--Tabla de productos-->
+          <h3>
+              Productos
+          </h3>
+          <h4>Hardware</h4>
+          <h4>Perifericos</h4>
+          <h4>Mantenimiento</h4>
+      </div>
+      <div>
+          <!--Tablam de servicios-->
           <h3>Servicios</h3>
-        </div>
-        <div>
+          <h4>Desarrollo web</h4>
+          <h4>Escudo digital</h4>
+          <h4>Capacitacion</h4>
+          <h4>Soporte Tecnico</h4>
+          <h4>Consultoria</h4>
+      </div>
+      <div>
+          <!--Enlace a Quienes somos-->
           <h3>Quienes Somos</h3>
-          <a href="">Historia</a>
-          <a href="">Nuestro Equipo</a>
-        </div>
+          <a href="../Pages/history.html">Historia</a>
+          <a href="../Pages/team.html">Nuestro Equipo</a>
+      </div>
         <div>
           <h3>Contacto</h3>
           <p>+56 9 2315412412</p>
@@ -335,5 +397,7 @@
         </div>
       </div>
     </footer>
+    <script src="../js/products.js"></script>
   </body>
+
 </html>

@@ -82,28 +82,17 @@ main{
 }
 
 
-.main-container {
-    display: flex;
-    margin: 5rem 0rem;
-    justify-content: space-around;
-}
-
-.main-content-title-container{
-    display: flex;
-    align-items: center;
-
-}
-
 .main-content {
-    margin: 5rem 0rem;
     display: flex;
     justify-content: space-around;
+    margin: 5rem 1rem;
 }
-
 
 .form-label-container {
-    margin: 3rem 0rem;
+    margin: 1rem;
 }
+
+
 
 .footer-container {
     background-color: rgb(49, 49, 49);

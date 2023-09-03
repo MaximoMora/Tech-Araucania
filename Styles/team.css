@@ -78,6 +78,21 @@ body {
     color: white;
 }
 
+.main-container {
+    margin: 4rem 0rem;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+th,td {
+    color: white;
+    padding: 10px;
+}
+
+
 .footer-container {
     background-color: rgb(49, 49, 49);
     padding: 1rem ;
