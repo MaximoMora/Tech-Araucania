@@ -2,10 +2,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0rem 15rem 0rem 15rem;
+    background-repeat: no-repeat; /*Para que el fondo no salga repetido*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
+    
 }
 
 .header-container {
-    display: flex;
+    display: flex; 
     color: rgb(255, 255, 255);
     background-color: rgb(49, 49, 49);
     margin: 0 0 0 0;
@@ -52,14 +56,14 @@ body {
 .a-container {
     display: flex;
     justify-content: space-evenly;
+    background-color: black;
     
 }
 
 .a-container a {
     font-size: 1.5rem;
-    color: rgb(49, 49, 49);
     text-decoration: none;
-
+    color: white;
 }
 
 .a-container a:hover {
