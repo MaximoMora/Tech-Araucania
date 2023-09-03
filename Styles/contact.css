@@ -1,23 +1,24 @@
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0rem 15rem 0rem 15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 25% top 30%;
+    background-repeat: no-repeat; /*Para que el fondo no salga repetido*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
+    
 }
 
 .header-container {
-    display: flex;
-    color: rgb(255, 255, 255);
-    background-color: rgb(49, 49, 49);
+    display: flex; /*Flex para que sea mas facil el acomodar*/
+    color: rgb(255, 255, 255); /*Color de las letras*/
+    background-color: rgb(49, 49, 49); /*Color de fondo*/
     margin: 0 0 0 0;
-    padding: 1rem;
-    justify-content: space-around;
+    padding: 1rem; /*cantidad de espacio entre el borde y el contenido del elemento*/
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
 }
 
+
 main{
-    color: white;
+    color: white; /*Color letra*/
 }
 
 
@@ -26,19 +27,21 @@ main{
 }
 
 
+/*Icono usuario*/
 #user-icon {
     margin: 1rem;
 }
-
+/*Icono carro*/
 #shop-icon {
     margin: 1rem;
 }
-
+/*Contenedor busqueda*/
 .search-container {
     padding: 0rem 4rem;
     display: flex;
 }
 
+/*Barra busqueda*/
 #search-bar {
     margin: 1rem 0rem;
 
@@ -46,12 +49,12 @@ main{
 
 }
 
+/*Icono busqueda*/
 #search-icon {
     margin: 1rem;
 
 
 }
-
 .nav-container {
     border-color: rgb(49, 49, 49);
     border-style: solid;
@@ -72,6 +75,7 @@ main{
 
 }
 
+/*Hover a container*/
 .a-container a:hover {
     background-color: rgb(49, 49, 49);
     color: white;

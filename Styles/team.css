@@ -1,10 +1,10 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0rem 15rem 0rem 15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 25% top 30%;
+    font-family: 'Roboto', sans-serif; /*Tipo fuente*/
+    margin: 0rem 15rem 0rem 15rem; /*Margen arriba Derecha Abajo izquierda*/
+    background-repeat: no-repeat; /*No se repetira el fondo*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%;  /*Como va a estar posicionado el fondo*/
 }
 
 .header-container {
@@ -13,7 +13,7 @@ body {
     background-color: rgb(49, 49, 49);
     margin: 0 0 0 0;
     padding: 1rem;
-    justify-content: space-around;
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
 }
 
 
@@ -22,20 +22,21 @@ body {
     color: rgb(255, 255, 255);
 }
 
-
+/*Icono usuario*/
 #user-icon {
     margin: 1rem;
 }
-
+/*Icono carro*/
 #shop-icon {
     margin: 1rem;
 }
-
+/*Contenedor busqueda*/
 .search-container {
     padding: 0rem 4rem;
     display: flex;
 }
 
+/*Barra busqueda*/
 #search-bar {
     margin: 1rem 0rem;
 
@@ -43,11 +44,13 @@ body {
 
 }
 
+/*Icono busqueda*/
 #search-icon {
     margin: 1rem;
 
 
 }
+
 
 .nav-container {
     border-color: rgb(49, 49, 49);
@@ -69,6 +72,7 @@ body {
     color: white;
 }
 
+/*Efecto hover en a container*/
 .a-container a:hover {
     background-color: rgb(49, 49, 49);
     color: white;

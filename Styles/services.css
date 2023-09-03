@@ -1,10 +1,10 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0rem 15rem 0rem 15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 25% top 30%;
+    font-family: 'Roboto', sans-serif; /*Tipo de fuente*/
+    margin: 0rem 15rem 0rem 15rem; /*Margen Arriba, Derecha, Abajo, Izquierda*/
+    background-repeat: no-repeat; /*No se repetira el fondo*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
 }
 
 .header-container {
@@ -13,29 +13,32 @@ body {
     background-color: rgb(49, 49, 49);
     margin: 0 0 0 0;
     padding: 1rem;
-    justify-content: space-around;
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
 }
 
 
-
+/*Titulo cabezera*/
 #header-title {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); 
 }
 
-
+/*Icono usuario*/
 #user-icon {
-    margin: 1rem;
+    margin: 1rem; /*Margen en todas las direcciones*/
 }
 
+/*Icono carro*/
 #shop-icon {
-    margin: 1rem;
+    margin: 1rem; /*Margen todas las direcciones*/
 }
 
+/*Contenedor de busqueda*/
 .search-container {
     padding: 0rem 4rem;
     display: flex;
 }
 
+/*Barra busqueda*/
 #search-bar {
     margin: 1rem 0rem;
 
@@ -43,6 +46,7 @@ body {
 
 }
 
+/*Icono buscar*/
 #search-icon {
     margin: 1rem;
 
@@ -69,6 +73,7 @@ body {
 
 }
 
+/*Propiedades de a container con hover*/
 .a-container a:hover {
     background-color: rgb(49, 49, 49);
     color: white;
@@ -90,6 +95,7 @@ body {
     display: flex;
 }
 
+/*texto principal*/
 .main-text-container {
     margin: 0rem 2rem;
     display: flex;
@@ -128,7 +134,7 @@ body {
 .img-services {
     position: relative;
     filter: grayscale(100%);
-    transition: .5s ease-in-out;
+    transition: .5s ease-in-out; /*Los cambios a blanco negro se hacen en intervalo de 5 segs*/
 }
 
 

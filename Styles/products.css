@@ -1,149 +1,149 @@
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0rem 15rem 0rem 15rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 25% top 30%;
+    font-family: 'Roboto', sans-serif; /*Tipo de fuente de letra*/
+    margin: 0rem 15rem 0rem 15rem; /*Margen Arriba, Derecha, Abajo, Izquierda */
+    background-repeat: no-repeat; /*Para que el fondo no salga repetido*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
 }
 
 .header-container {
-    display: flex;
-    color: rgb(255, 255, 255);
-    background-color: rgb(49, 49, 49);
-    margin: 0 0 0 0;
-    padding: 1rem;
-    justify-content: space-around;
+    display: flex; /*Flex para que sea mas facil el acomodar*/
+    color: rgb(255, 255, 255); /*Color de las letras*/
+    background-color: rgb(49, 49, 49); /*Color de fondo*/
+    margin: 0 0 0 0; /*Margen en todas las direcciones*/
+    padding: 1rem; /*cantidad de espacio entre el borde y el contenido del elemento*/
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
 }
+
 
 
 
 #header-title {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255); /*Color de las letras*/
 }
 
 
 #user-icon {
-    margin: 1rem;
+    margin: 1rem; /*Margen en todas las direcciones*/
 }
 
 #shop-icon {
-    margin: 1rem;
+    margin: 1rem; /*Margen en todas las direcciones*/
 }
 
 .search-container {
-    padding: 0rem 4rem;
-    display: flex;
+    padding: 0rem 4rem; /*Area de relleno Arriba,abajo\Derecha,izquierda*/
+    display: flex; /*Flex para que sea mas facil el acomodar*/
 }
 
 #search-bar {
-    margin: 1rem 0rem;
+    margin: 1rem 0rem; /*Margen Arriba,abajo\Derecha,izquierda*/
 
-    padding: 0rem 10rem;
+    padding: 0rem 10rem; /*Area de relleno Arriba,abajo\Derecha,izquierda*/
 
 }
 
 #search-icon {
-    margin: 1rem;
+    margin: 1rem; /*Margen todas las direcciones*/
 
 
 }
 
 .nav-container {
-    border-color: rgb(49, 49, 49);
-    border-style: solid;
-    margin: 0rem 0rem 1rem 0rem;
+    border-color: rgb(49, 49, 49); /*Color de esquina*/
+    border-style: solid; /*Estilo de esquina*/
+    margin: 0rem 0rem 1rem 0rem; /*Margen para Arriba Derecha Abajo y Izquierda*/
 }
 
 .a-container {
-    display: flex;
-    justify-content: space-evenly;
-    background-color: black;
+    display: flex; /*Flex para que sea mas facil acomodar*/
+    justify-content: space-evenly; 
+    background-color: black; /*Color de fondo*/
 }
 
 .a-container a {
-    font-size: 1.5rem;
-    color: rgb(49, 49, 49);
-    text-decoration: none;
-    color: white;
+    font-size: 1.5rem; /*Tamaño fuente*/
+    text-decoration: none; /*Decoracion texto*/
+    color: white; /*Color letra*/
 }
 
 .a-container a:hover {
-    background-color: rgb(49, 49, 49);
-    color: white;
+    background-color: rgb(49, 49, 49); /*Color fondo*/
+    color: white; /*Color letra*/
 }
 
 .catalogo {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-    color: white;
+    display: flex; /*Flex para que sea mas facil acomodar*/
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
+    flex-wrap: wrap; /*la clase permanecera en la linea*/
+    padding: 20px; /*Area relleno para todos los lados*/
+    color: white; /*Color de letra*/
 }
 
 #categoria {
-    background-color: #C69749;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 40px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
+    background-color: #C69749; /*Color fondo*/
+    border-radius: 5px; /*Redondear bordes de cajas*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra de la caja*/
+    width: calc(33.33% - 40px); /*Ancho*/
+    box-sizing: border-box; /*Tamaño de caja*/
+    display: flex; /*Flex para que sea mas facil acomodar*/
+    flex-direction: row; /*Acomodar en forma horizontal*/
 }
 
 
 .categoria h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 18px; /*tamaño fuente*/
+    margin-bottom: 10px; /*Margen al fondo*/
 }
 
 .producto {
-    margin-top: 20px;
-    text-align: center;
-    color: white;
+    margin-top: 20px; /*Margen hacia arriba*/
+    text-align: center; /*texto al centro*/
+    color: white; /*Color de letra*/
 }
 
 .producto img {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /*Ancho maximo*/
+    border-radius: 5px; /*Redondear bordes de cajas*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra caja*/
 }
 
 .producto a {
-    color: white;
-    font-weight: bold;
+    color: white; /*Color de letra*/
+    font-weight: bold; /*Grosor de letra*/
 }
 
 .producto a:hover {
-    color: #ff6600;
+    color: #ff6600; /*Color de letra con efecto hover*/
 }
 
 .a-container a:hover {
-    background-color: rgb(49, 49, 49);
-    color: white;
+    background-color: rgb(49, 49, 49); /*Color fondo con efecto hover*/
+    color: white;  /*Color letra con efecto hover*/
 }
 
 
 .carrusel {
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: scroll;
-    margin: 1rem;
+    display: flex; /*Flex para que sea mas facil acomodar*/
+    flex-wrap: nowrap; /*Elementos distribuidos en una sola linea*/
+    overflow: scroll; /*crea una barra deslizante lateral*/
+    margin: 1rem; /*Margen en todas las direcciones*/
 }
 
 
 
 .elemento {
-    flex: 1 0 auto;
-    margin: 0 10px;
-    width: 400px;
-    height: 400px;
+    flex: 1 0 auto; /*Flex para que sea mas facil acomodar*/
+    margin: 0 10px; /*Area de relleno Arriba,abajo\Derecha,izquierda*/
+    width: 400px; /*Ancho*/
+    height: 400px; /*Altura*/
 }
 
 .elemento:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /*escalar un elemento HTML a través de sus ejes*/
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    cursor: pointer; 
+    cursor: pointer; /*Cambia de puntero a mano*/
   }
 .footer-container {
     background-color: rgb(49, 49, 49);
