@@ -1,0 +1,217 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #DAE2DF;
+
+}
+
+
+.nav {    
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navUser {
+    padding: 0px 8rem;
+}
+
+.navTitle {
+    display: flex;
+}
+
+.navTitle svg {
+    width: 80px;
+    height: 80px;
+
+}
+
+.navLink {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navLink a {
+    margin: 0px 20px 0px 20px;
+    font-weight:900;
+    text-decoration: none;
+    color: black;
+}
+
+.navInput {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navInput svg {
+    margin: 25px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.mainContainer {
+
+    position: relative;
+}
+
+.mainContainer img {
+    max-width: 100%;
+    display: block;
+}
+.mainText {
+    position: absolute;
+    height: 45%;
+    width: 35%;
+    top: 20rem;
+    right: 20rem;
+    border-radius: 10px;
+    background-color:#1E2019;
+
+}
+
+.mainText h5 {
+    margin: 40px 20% 0px 5%;
+    color: #548C2F ;
+}
+
+.mainText h1 {
+    margin: 10px 20% 40px 5%;
+    color: #548C2F;
+    font-weight: 900;
+    font-size: 3rem;
+
+
+}
+
+.mainText  p {
+    margin: 0px 20% 0px 5%;
+    color: white;
+
+}
+
+.mainText button {
+    margin: 25px 80% 0px 5%;
+    width: 14rem;
+    height: 4rem;
+    border-style: none;
+    background-color: white;
+    color:black ;
+    font-weight: 900;
+}
+
+
+.mainContainer img {
+    width: 100%;
+}
+
+
+.mainCatalogue {
+    margin: 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainCatalogue h2 {
+    font-weight: 900;
+    font-size: 2rem;
+
+}
+
+.mainCatalogueImages {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.mainCatalogueImages img {
+    margin: 10px;
+    width: 500px;
+
+    height: 400px;
+    
+}
+
+.mainCatalogueImagesProduct {
+    margin: 0px 1rem;
+
+}
+
+
+
+
+
+.mainProducts {
+    text-align: center;
+
+}
+
+.mainGalery {
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.mainProduct {
+    margin: 10px 20px;
+    background-color: #1E2019;
+    border-radius: 10px;
+}
+
+.mainProduct h2 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.mainProduct img{
+    width: 300px;
+}
+
+
+
+.mainProductText h4 {
+    color: #548C2F;
+}
+
+.text {
+    color: #DAE2DF;
+}
+
+.price {
+    color: #DAE2DF;
+}
+.past-price {
+    text-decoration:line-through;
+}
+
+
+
+.footer {
+    display: flex;
+    background-color: rgb(185, 185, 243);
+    justify-content:space-around;
+
+
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+}
+
+.footerText a{
+    text-decoration: none;
+    color: black;
+    margin: 20px  0px;
+
+}

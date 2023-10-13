@@ -1,0 +1,110 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0rem 15rem 0rem 15rem;
+    background-repeat: no-repeat; /*Para que el fondo no salga repetido*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
+    
+}
+
+.header-container {
+    display: flex; /*Flex para que sea mas facil el acomodar*/
+    color: rgb(255, 255, 255); /*Color de las letras*/
+    background-color: rgb(49, 49, 49); /*Color de fondo*/
+    margin: 0 0 0 0;
+    padding: 1rem; /*cantidad de espacio entre el borde y el contenido del elemento*/
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
+}
+
+
+main{
+    color: white; /*Color letra*/
+}
+
+
+#header-title {
+    color: rgb(255, 255, 255);
+}
+
+
+/*Icono usuario*/
+#user-icon {
+    margin: 1rem;
+}
+/*Icono carro*/
+#shop-icon {
+    margin: 1rem;
+}
+/*Contenedor busqueda*/
+.search-container {
+    padding: 0rem 4rem;
+    display: flex;
+}
+
+/*Barra busqueda*/
+#search-bar {
+    margin: 1rem 0rem;
+
+    padding: 0rem 10rem;
+
+}
+
+/*Icono busqueda*/
+#search-icon {
+    margin: 1rem;
+
+
+}
+.nav-container {
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.a-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+.a-container a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+/*Hover a container*/
+.a-container a:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 1rem;
+}
+
+.form-label-container {
+    margin: 1rem;
+}
+
+
+
+.footer-container {
+    background-color: rgb(49, 49, 49);
+    padding: 1rem ;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+.footer-container  a {
+    color: white;
+    display: flex;
+    margin: 1rem;
+    text-decoration: none;
+}
