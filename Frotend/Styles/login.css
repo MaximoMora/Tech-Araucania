@@ -1,0 +1,119 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #DAE2DF;
+
+}
+
+
+.nav {    
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navUser {
+    padding: 0px 8rem;
+}
+
+.navTitle {
+    display: flex;
+}
+
+.navTitle svg {
+    width: 80px;
+    height: 80px;
+
+}
+
+.navLink {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navLink a {
+    margin: 0px 20px 0px 20px;
+    font-weight:900;
+    text-decoration: none;
+    color: black;
+}
+
+.navInput {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navInput svg {
+    margin: 25px;
+    width: 40px;
+    height: 40px;
+
+}
+
+.loginContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0px;
+}
+
+.login {
+    background-color: #1E2019;
+
+
+}
+
+.loginTitle {
+    display: flex;
+    color: #548C2F;
+    justify-content: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 20rem;
+
+}
+
+.input {
+    margin: 1rem 0px;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+
+
+
+
+.footer {
+    display: flex;
+    background-color: rgb(185, 185, 243);
+    justify-content:space-around;
+
+
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+}
+
+.footerText a{
+    text-decoration: none;
+    color: black;
+    margin: 20px  0px;
+
+}
