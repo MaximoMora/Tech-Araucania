@@ -154,6 +154,10 @@ if (isset($_POST['subir'])) {
     <br>
 
     </main>
+    <script>
+      console.log("hola")
+    </script>
 </body>
+
 </html>
 
