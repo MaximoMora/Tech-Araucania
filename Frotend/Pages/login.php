@@ -90,7 +90,7 @@
                     <input type="text" placeholder="apellido" name="apellido">
                     <input type="email" placeholder="correo" name="correo">
                     <input type="text" placeholder="direccion" name="direccion">
-                    <button>Registrarse</button>
+                    <button type="submit">Registrarse</button>
                   </form>
                 </div>
             </form>

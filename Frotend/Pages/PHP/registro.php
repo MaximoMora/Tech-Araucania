@@ -11,6 +11,7 @@
               VALUES('$rut', '$nombre', '$apellido', '$correo', '$direccion')";
     $resultado = mysqli_query($conexion, $query);
     
+    
         
 
 ?>

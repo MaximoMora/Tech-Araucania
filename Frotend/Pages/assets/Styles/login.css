@@ -118,7 +118,7 @@ body {
     margin: 20px  0px;
 
 }
-=======
+
 .container-form {
     display: flex;
     justify-content: space-around;
@@ -295,4 +295,3 @@ form input[type="text"] {
     transition: border-color 0.3s;
 }
 
->>>>>>> 9d106b90e43d7f3c6618400c856ad979028bb296
