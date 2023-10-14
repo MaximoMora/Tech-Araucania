@@ -72,7 +72,7 @@
                     <button class="sign-up-btn">Iniciar sesion</button>
                 </div>
             </div>
-            <form class="formulario">
+            <form action= backend/registro.php  method="post" class="formulario">
                 <h2 class="create-account">Crear Cuenta</h2>
                 <div class="iconos">
                     <a href="https://www.instagram.com/ferreteriabertuzzi/?hl=es">
@@ -88,11 +88,11 @@
                 </div>
                 <div class="cuentaN">
                 <p class="cuenta-gratis">Ingrese sus datos para mejorar nuestra atencion</p>
-                <input type="text" placeholder="rut">
-                <input type="text" placeholder="nombre">
-                <input type="text" placeholder="apellido">
-                <input type="email" placeholder="correo">
-                <input type="text" placeholder="direccion">
+                <input type="text" placeholder="rut" name="rut">
+                <input type="text" placeholder="nombre" name="nombre">
+                <input type="text" placeholder="apellido" name="apellido">
+                <input type="email" placeholder="correo" name="correo">
+                <input type="text" placeholder="direccion" name="direccion">
                 <input type="button" value="Registrarse">
                 </div>
             </form>
