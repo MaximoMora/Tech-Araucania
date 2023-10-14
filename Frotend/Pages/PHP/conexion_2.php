@@ -1,9 +1,5 @@
 <?php
-    $conexion = mysqli_connect("localhost", "root", "", "login");
 
-    if($conexion){
-        echo "funciona";
-    } else{
-        echo "No funciona xd";
-    }
+$conexion= new mysqli("localhost", "root", "", "login");
+$conexion->set_charset("utf8");
 ?>

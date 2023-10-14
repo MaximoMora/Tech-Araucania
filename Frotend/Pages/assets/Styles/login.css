@@ -295,3 +295,8 @@ form input[type="text"] {
     transition: border-color 0.3s;
 }
 
+.alerta{
+    text-align: center;
+    color: red;
+}
+

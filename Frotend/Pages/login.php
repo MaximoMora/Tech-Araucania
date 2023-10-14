@@ -1,30 +1,4 @@
-<?php
 
-$conectar = mysqli_connect('localhost', 'root', '', 'login');
-
-if (!$conectar) {
-    echo "No se pudo conectar a la base de datos";
-}
-
-if (isset($_POST['subir'])) {
-    $rut = $_POST['rut'];
-    $nombre = $_POST['nombre'];
-    $apellido = $_POST['apellido'];
-    $correo = $_POST['correo'];
-    $direccion = $_POST['direccion'];
-
-    $query = "INSERT INTO registro(rut, nombre, apellido, correo, direccion)
-              VALUES('$rut', '$nombre', '$apellido', '$correo', '$direccion')";
-    $resultado = mysqli_query($conectar, $query);
-
-    if (!$resultado) {
-        echo "No se pudieron insertar los datos. Error: " . mysqli_error($conectar);
-    } else {
-        echo "Datos insertados correctamente.";
-    }
-}
-
-?>
 
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
@@ -110,17 +84,15 @@ if (isset($_POST['subir'])) {
                     </div>
                     </a>
                 </div>
-                <div class="cuentaN">
-                  <form action="PHP/registro.php" method="POST">
+                <form class="cuentaN" method="POST">
                     <p class="cuenta-gratis">Ingrese sus datos para mejorar nuestra atencion</p>
-                    <input type="text" placeholder="rut" name="rut">
-                    <input type="text" placeholder="nombre" name="nombre">
-                    <input type="text" placeholder="apellido" name="apellido">
-                    <input type="email" placeholder="correo" name="correo">
-                    <input type="text" placeholder="direccion" name="direccion">
-                    <button type="submit">Registrarse</button>
-                  </form>
-                </div>
+                                        <input type="text" placeholder="rut" name="rut" id="ruti">
+                    <input type="text" placeholder="nombre" name="nombre" id="nombreci">
+                    <input type="text" placeholder="apellido" name="apellido" id="apellidi">
+                    <input type="email" placeholder="correo" name="correo" id="emial">
+                    <input type="text" placeholder="direccion" name="direccion" id="direccion">
+                    <button type="submit" name="registro" id="keso">Registrarse</button>
+                </form>
             </form>
         </div>
         <div class="sign-in">
@@ -154,9 +126,44 @@ if (isset($_POST['subir'])) {
     <br>
 
     </main>
-    <script>
-      console.log("hola")
-    </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const btn = document.getElementById("keso");
+
+    btn.addEventListener("click", function(){
+        event.preventDefault();
+        const rut = document.getElementById("ruti").value;
+        const nombre = document.getElementById("nombreci").value;
+        const apellido = document.getElementById("apellidi").value;
+        const correo = document.getElementById("emial").value;
+        const direccion = document.getElementById("direccion").value;
+
+        const nuevoform = new FormData();
+        nuevoform.append("rut", rut);
+        nuevoform.append("nombre", nombre);
+        nuevoform.append("apellido", apellido);
+        nuevoform.append("correo", correo);
+        nuevoform.append("direccion", direccion);
+
+        form = document.getElementById("keso");
+        
+        fetch('registro.php', {
+            method: 'POST',
+            body: nuevoform 
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                console.error(data.error);
+            } else {
+                
+                
+            }
+        })
+    });
+});
+
+</script>
 </body>
 
 </html>
