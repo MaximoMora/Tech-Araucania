@@ -2,9 +2,6 @@
 <!DOCTYPE html>
 <!--El idioma del documento-->
 <html lang="en">
-<!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
-<!doctype html>
-<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Frotend/Styles/login.css">
-    <script src="/Frotend/js/login.js"></script>
+    <link rel="stylesheet" href="assets/Styles/login.css">
+    <script src="assets/js/login.js"></script>
   </head>
-</html>
 <!--Body contiene todo el contenido que ve en la pagina web-->
 <body background="../Images/fondo.jpg">
     <!--El header en la parte de arriba de nuestra pagina, estara el titulo la barra de busqueda-->
@@ -72,7 +68,7 @@
                     <button class="sign-up-btn">Iniciar sesion</button>
                 </div>
             </div>
-            <form action= backend/registro.php  method="post" class="formulario">
+            <form class="formulario">
                 <h2 class="create-account">Crear Cuenta</h2>
                 <div class="iconos">
                     <a href="https://www.instagram.com/ferreteriabertuzzi/?hl=es">
@@ -87,13 +83,15 @@
                     </a>
                 </div>
                 <div class="cuentaN">
-                <p class="cuenta-gratis">Ingrese sus datos para mejorar nuestra atencion</p>
-                <input type="text" placeholder="rut" name="rut">
-                <input type="text" placeholder="nombre" name="nombre">
-                <input type="text" placeholder="apellido" name="apellido">
-                <input type="email" placeholder="correo" name="correo">
-                <input type="text" placeholder="direccion" name="direccion">
-                <input type="button" value="Registrarse">
+                  <form action="PHP/registro.php" method="POST">
+                    <p class="cuenta-gratis">Ingrese sus datos para mejorar nuestra atencion</p>
+                    <input type="text" placeholder="rut" name="rut">
+                    <input type="text" placeholder="nombre" name="nombre">
+                    <input type="text" placeholder="apellido" name="apellido">
+                    <input type="email" placeholder="correo" name="correo">
+                    <input type="text" placeholder="direccion" name="direccion">
+                    <button>Registrarse</button>
+                  </form>
                 </div>
             </form>
         </div>
@@ -128,7 +126,5 @@
     <br>
 
     </main>
-    <script src="../api/login.js">
-
-    </script>
 </body>
+</html>
