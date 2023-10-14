@@ -1,3 +1,31 @@
+<?php
+
+$conectar = mysqli_connect('localhost', 'root', '', 'login');
+
+if (!$conectar) {
+    echo "No se pudo conectar a la base de datos";
+}
+
+if (isset($_POST['subir'])) {
+    $rut = $_POST['rut'];
+    $nombre = $_POST['nombre'];
+    $apellido = $_POST['apellido'];
+    $correo = $_POST['correo'];
+    $direccion = $_POST['direccion'];
+
+    $query = "INSERT INTO registro(rut, nombre, apellido, correo, direccion)
+              VALUES('$rut', '$nombre', '$apellido', '$correo', '$direccion')";
+    $resultado = mysqli_query($conectar, $query);
+
+    if (!$resultado) {
+        echo "No se pudieron insertar los datos. Error: " . mysqli_error($conectar);
+    } else {
+        echo "Datos insertados correctamente.";
+    }
+}
+
+?>
+
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
 <!--El idioma del documento-->
@@ -113,7 +141,7 @@
                 <p class="cuenta-gratis"></p>
                 <input type="text"  id="rut" placeholder="rut">
                 <input type="email" id="email" placeholder="correo">
-                <input type="button" placeholder="Iniciar Sesion">
+                <input type="button" placeholder="Iniciar Sesion" name="subir">
             </form>
             <div class="welcome-back">
                 <div class="message message-register">
@@ -128,3 +156,4 @@
     </main>
 </body>
 </html>
+

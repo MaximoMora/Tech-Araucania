@@ -1,6 +1,5 @@
 <?php
-
-    $conexion = mysqli_connect("db.inf.uct.cl", "jpoblete", "21736669", "A2023_jpoblete");
+    $conexion = mysqli_connect("localhost", "root", "", "login");
 
     if($conexion){
         echo "funciona";
