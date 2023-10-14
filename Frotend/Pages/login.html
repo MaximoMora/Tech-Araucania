@@ -113,19 +113,22 @@
                     </a>
                 </div>
                 <p class="cuenta-gratis"></p>
-                <input type="text" placeholder="rut">
-                <input type="email" placeholder="correo">
+                <input type="text"  id="rut" placeholder="rut">
+                <input type="email" id="email" placeholder="correo">
                 <input type="button" placeholder="Iniciar Sesion">
             </form>
             <div class="welcome-back">
                 <div class="message message-register">
                     <h2>Bienvenido de nuevo</h2>
                     <p>Si aun no tiene una cuenta registrese aca</p>
-                    <button class="sign-in-btn">Registrarse</button>
+                    <button class="sign-in-btn" onclick="register()">Registrarse</button>
                 </div>
             </div>
         </div>
     <br>
 
     </main>
+    <script src="../api/login.js">
+
+    </script>
 </body>
