@@ -111,9 +111,9 @@
                     </a>
                 </div>
                 <p class="cuenta-gratis"></p>
-                <input type="text"  id="rut" placeholder="rut">
-                <input type="email" id="email" placeholder="correo">
-                <input type="button" placeholder="Iniciar Sesion" name="subir">
+                <input type="text"  id="rut" placeholder="rut" id="rutito">
+                <input type="email" id="email" placeholder="correo" id="correito">
+                <input type="button" placeholder="Iniciar Sesion" name="subir" id="inicio">
             </form>
             <div class="welcome-back">
                 <div class="message message-register">
@@ -151,7 +151,12 @@ document.addEventListener("DOMContentLoaded", function() {
             method: 'POST',
             body: nuevoform 
         })
-        .then(response => response.json())
+        .then(response => {
+        if(response.ok){
+          alert("exito");
+          window.location.href = "products.html";
+        }}
+        )
         .then(data => {
             if (data.error) {
                 console.error(data.error);
@@ -161,7 +166,33 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         })
     });
-});
+})
+
+document.getElementById('inicio').addEventListener("click", function(event) {
+        event.preventDefault();
+        const rut = document.getElementById("rutito").value;
+        const correo = document.getElementById("correito").value;
+      
+        const nuevoform = new FormData();
+        nuevoform.append("rut", rut);
+        nuevoform.append("correo", correo);
+        form = document.getElementById("inicio");
+        
+        fetch('Inicio_sesion', {
+            method: 'POST',
+            body: nuevoform 
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                console.error(data.error);
+            } else {
+                
+                
+            }
+        })
+    })
+
 
 </script>
 </body>
