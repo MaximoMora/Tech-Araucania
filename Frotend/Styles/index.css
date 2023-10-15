@@ -8,53 +8,6 @@ body {
 }
 
 
-.nav {    
-
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.navUser {
-    padding: 0px 8rem;
-}
-
-.navTitle {
-    display: flex;
-}
-
-.navTitle svg {
-    width: 80px;
-    height: 80px;
-
-}
-
-.navLink {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.navLink a {
-    margin: 0px 10px 0px 10px;
-    font-weight:900;
-    text-decoration: none;
-    color: black;
-}
-
-.navInput {
-    display: flex;
-    text-align: center;
-    align-items: center;
-}
-
-.navInput svg {
-    margin: 25px;
-    width: 40px;
-    height: 40px;
-
-}
-
 .mainContainer {
 
     position: relative;
@@ -215,3 +168,86 @@ body {
     margin: 20px  0px;
 
 }
+
+
+
+body {
+    font-family: 'Roboto', sans-serif; /*Tipo de fuente*/
+    margin: 0rem 15rem 0rem 15rem; /*Margen Arriba, Derecha, Abajo, Izquierda*/
+    background-repeat: no-repeat; /*No se repetira el fondo*/
+    background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
+    background-position: left 25% top 30%; /*Como va a estar posicionado el fondo*/
+}
+
+.header-container {
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 49, 49);
+    margin: 0 0 0 0;
+    padding: 1rem;
+    justify-content: space-around; /*Distribuir el espacio entre items flex*/
+}
+
+
+/*Titulo cabezera*/
+#header-title {
+    color: rgb(255, 255, 255); 
+}
+
+/*Icono usuario*/
+#user-icon {
+    margin: 1rem; /*Margen en todas las direcciones*/
+}
+
+/*Icono carro*/
+#shop-icon {
+    margin: 1rem; /*Margen todas las direcciones*/
+}
+
+/*Contenedor de busqueda*/
+.search-container {
+    padding: 0rem 4rem;
+    display: flex;
+}
+
+/*Barra busqueda*/
+#search-bar {
+    margin: 1rem 0rem;
+
+    padding: 0rem 10rem;
+
+}
+
+/*Icono buscar*/
+#search-icon {
+    margin: 1rem;
+
+
+}
+
+.nav-container {
+    border-color: rgb(49, 49, 49);
+    border-style: solid;
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.a-container {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    
+}
+
+.a-container a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+
+}
+
+/*Propiedades de a container con hover*/
+.a-container a:hover {
+    background-color: rgb(49, 49, 49);
+    color: white;
+}
+
