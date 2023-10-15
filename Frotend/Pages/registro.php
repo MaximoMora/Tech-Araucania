@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('db.inf.uct.cl', 'maxmora', '21459058', 'Registro');
+$conn = new mysqli('localhost', 'root', '', 'login');
 $response = "";
 
 if ($conn->connect_error) {

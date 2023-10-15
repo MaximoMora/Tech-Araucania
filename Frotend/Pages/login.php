@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Styles/login.css">
+    <link rel="stylesheet" href="assets/Styles/login.css">
     <script src="assets/js/login.js"></script>
   </head>
 <!--Body contiene todo el contenido que ve en la pagina web-->
@@ -111,9 +111,9 @@
                     </a>
                 </div>
                 <p class="cuenta-gratis"></p>
-                <input type="text"  id="rut" placeholder="rut" id="rutito">
-                <input type="email" id="email" placeholder="correo" id="correito">
-                <input type="button" placeholder="Iniciar Sesion" name="subir" id="inicio">
+                <input type="text"  id="rut" placeholder="rut">
+                <input type="email" id="email" placeholder="correo">
+                <input type="button" placeholder="Iniciar Sesion" name="subir">
             </form>
             <div class="welcome-back">
                 <div class="message message-register">
@@ -129,7 +129,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("keso");
-
     btn.addEventListener("click", function(){
         event.preventDefault();
         const rut = document.getElementById("ruti").value;
@@ -137,48 +136,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const apellido = document.getElementById("apellidi").value;
         const correo = document.getElementById("emial").value;
         const direccion = document.getElementById("direccion").value;
-
         const nuevoform = new FormData();
         nuevoform.append("rut", rut);
         nuevoform.append("nombre", nombre);
         nuevoform.append("apellido", apellido);
         nuevoform.append("correo", correo);
         nuevoform.append("direccion", direccion);
-
         form = document.getElementById("keso");
         
         fetch('registro.php', {
-            method: 'POST',
-            body: nuevoform 
-        })
-        .then(response => {
-        if(response.ok){
-          alert("exito");
-          window.location.href = "products.html";
-        }}
-        )
-        .then(data => {
-            if (data.error) {
-                console.error(data.error);
-            } else {
-                
-                
-            }
-        })
-    });
-})
-
-document.getElementById('inicio').addEventListener("click", function(event) {
-        event.preventDefault();
-        const rut = document.getElementById("rutito").value;
-        const correo = document.getElementById("correito").value;
-      
-        const nuevoform = new FormData();
-        nuevoform.append("rut", rut);
-        nuevoform.append("correo", correo);
-        form = document.getElementById("inicio");
-        
-        fetch('Inicio_sesion', {
             method: 'POST',
             body: nuevoform 
         })
@@ -191,9 +157,8 @@ document.getElementById('inicio').addEventListener("click", function(event) {
                 
             }
         })
-    })
-
-
+    });
+});
 </script>
 </body>
 
