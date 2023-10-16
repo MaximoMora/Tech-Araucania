@@ -1,3 +1,8 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
+
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
 <!--El idioma del documento-->
@@ -28,35 +33,35 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
+                  </li> 
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="products.php">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="services.html">Servicios</a>
+                    <a class="nav-link active" href="services.php">Servicios</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Nosotros
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                      <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                      <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                      <li><a class="dropdown-item" href="history.php">Historia</a></li>
                       <li><hr class="dropdown-divider"></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contacto</a>
+                    <a class="nav-link" href="contact.php">Contacto</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-                <li>
-                    <a href="login.php">Inicio sesion</a>
-                </li>
               </div>
             </div>
           </nav>
@@ -206,7 +211,15 @@
 
 
 
+<script>
+      var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
+      var botonnn = document.getElementById("botonnnn");
 
+      if(usuarioIniciado){
+        botonnn.textContent = "Cerrar Sesion";
+        botonnn.href = "cerrar_sesion.php";
+      }
+</script>
 </body>
 
 </html>

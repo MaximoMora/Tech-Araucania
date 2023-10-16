@@ -1,8 +1,14 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
+<!--El archivo es de tipo html-->
 <!DOCTYPE html>
+<!--El idioma del documento-->
 <html lang="en">
   <!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
 
-  <head>
+  <head><!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Araucania</title>
@@ -10,14 +16,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Styles/services.css" />
-
-    <title>Servicios</title> <!--Titulo de la pag (TechAraucania)-->
+    <link rel="stylesheet" href="../Styles/contact.css" />
+    <title>Contacto</title>
   </head>
-  <!--Body contiene todo el contenido que ve en la pagina web-->
 
-  <body background="../Images/fondo.jpg">
-    <!--El header en la parte de arriba de nuestra pagina, estara el titulo la barra de busqueda-->
+  <body background="../Images/fondo.jpg"> <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -26,27 +29,30 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
+                  </li> 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Productos</a>
+                <a class="nav-link" href="products.php">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="services.html">Servicios</a>
+                <a class="nav-link" href="services.php">Servicios</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Nosotros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
                   <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
+                <a class="nav-link" href="contact.php">Contacto</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -57,98 +63,57 @@
         </div>
       </nav>
     </header>
-    <!--La parte principal del codigo-->
     <main>
-      <!--Informacion de los servicios de tech araucania-->
-      <section class="main-resume-container">
-        <p class="main-text-container">
-          En TechAraucanía, hemos diseñado una gama de productos tecnológicos
-          para satisfacer tus necesidades y mejorar tu vida digital. Cada
-          producto está diseñado con atención a los detalles y desarrollado con
-          las últimas tecnologías para brindarte una experiencia excepcional.
-          Permítenos presentarte nuestros productos destacados:
-        </p>
-        <img src="../Images/Services/team.jpg" height="300" width="600" />
-      </section>
-      <!-- Servicio de desarrollo web -->
-      <section class="main-category-container">
-        <div class="category-container">
-          <div class="category-services-type-container">
-            <h3>Desarrollo web</h3>
-            <img class="img-services" src="../Images/Services/desarrollo web.jpg">
-            
-          </div>
-          <div class="category-services-text-container">
-            <p>
-              Diseñamos y desarrollamos sitios web para atraer visitantes y hacer que sea mas notorio en la Web.
-               Nuestros servicios incluyen diseño responsivo, optimización de la velocidad, tiendas en línea, 
-               mantenimiento continuo y seguridad sólida. Para satisfacer sus necesidades digitales, creamos aplicaciones web a medida.
-            </p>
-          </div>
-        </div>
-        <!-- Servicio de Escudo digital-->
-        <div class="category-container">
-          <div class="category-services-type-container">
-            <h3>Escudo digital</h3> <!--Titulo de seccion-->
-            <img class="img-services" src="../Images/Services/escudo-mejorado.jpg">
-          </div>
-          <div class="category-services-text-container">
-            <p>
-              Nuestros servicios de desarrollo web con estilo "Escudo Digital" brindan creación y diseño de sitios web pero enfocados en lo que es la seguridad cibernética.
-               Priorizamos la protección de sus actividades digitales en una variedad de plataformas web, desde sitios web responsivos hasta tiendas en línea, Creamos sitios web con toques de seguridad
-            </p>
-          </div>
-        </div>
-        <!-- Servicio de Capacitacion-->
-        <div class="category-container">
-          <div class="category-services-type-container">
-            <h3>Capacitacion</h3>
-            <img class="img-services" src="../Images/Services/capacitacion-mejorada.jpg">
-          </div>
-          <div class="category-services-text-container">
-            <p>
-              Nuestra capacitación en Informatica te proporciona las habilidades y conocimientos necesarios para crear sitios web.
-               Aprende diseño web, programación, y optimización de sitios,
-                Domina las herramientas y técnicas esenciales para construir una presencia digital sólida y atractiva.
-            </p>
-          </div>
-        </div>
-        <!-- Servicio de Soporte tecnico-->
-        <div class="category-container">
-          <div class="category-services-type-container">
-            <h3>Soporte Tecnico</h3>
-            <img class="img-services" src="../Images/Services/soporte tecnico-mejorado.jpg">
-          </div>
-          <div class="category-services-text-container">
-            <p>
-              Brindamos soporte técnico en el campo de las tecnologías de la información. 
-              mantenimiento de Hardware, Problemas de Software, Ataques de Ransomware, Nuestro Equipo
-              fue capacitado por los mejores centros educativos, Conozca y cuente con nuestro equipo para resolver todos sus problemas informaticos.
-            </p>
-          </div>
-        </div>
-        <!-- Servicio de Consultoria-->
-        <div class="category-container">
-          <div class="category-services-type-container">
-            <h3>Consultoria</h3>
-            <img class="img-services" src="../Images/Services/consultoria-mejorada.jpg">
-          </div>
-          <div class="category-services-text-container">
-            <p>
-              Nuestro consultor de TI ofrece conocimientos para abordar sus desafíos tecnológicos y estratégicos. Le ayudamos a tomar decisiones informadas y a optimizar sus sistemas y proyectos electrónicos.
-          </div>
-        </div>
-      </section>
+      <h2>Contactate con nosotros</h2>
+      <div class="main-content">
+        <!--Formulario de contacto-->
+        <section>
+          <h2>Formulario</h2>
+          <form action="">
+            <fieldset>
+              <legend>Contactacnos llenando todos los campos</legend>
+              <div class="form-label-container">
+                <label for="">Nombre</label>  <!--Espacio para poner el nombre-->
+                <input type="text" />
+              </div> 
+                <label for="">Telefono</label>  <!--Espacio para poner el Telefono-->
+                <input type="text" />
+              <div class="form-label-container">
+                <label for="">Correo</label> <!--Espacio para poner el Correo-->
+                <input type="text" />
+              </div>
+              <label for="">Mensaje</label> <!--Espacio para poner el  Mensaje-->
+
+              <button onclick="SendInfo()">Enviar</button>
+            </fieldset>
+          </form>
+        </section>
+        <script> 
+        var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
+        var botonnn = document.getElementById("botonnnn");
+        
+        if(usuarioIniciado){
+          botonnn.textContent = "Cerrar Sesion";
+          botonnn.href = "cerrar_sesion.php";
+        }
+       </script>
+      </body>
+        <!--Imagen para enternder que es un pagina de contacto -->
+        <section>
+          <img src="../Images/Contact/callcenter.webp" height="300" width="500" />
+        </section>
+      </div>
     </main>
-    <!--El footer de nuestra pagina-->
+        <!--El footer de nuestra pagina-->
+
     <footer>
       <div class="footer-container">
         <div>
           <h1>Tech Araucania</h1>
           <h4>Sigueno en</h4>
-          <!--Parte de los iconos-->
+            <!--Parte de los iconos-->
+
           <div>
-            <!--Icono de facebook-->
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-facebook-filled"
@@ -168,7 +133,7 @@
                 fill="currentColor"
               />
             </svg>
-            <!--Icono de twitter-->
+           <!--Icono de twitter-->
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -189,7 +154,8 @@
                 fill="currentColor"
               />
             </svg>
-            <!--Icono de instagram-->
+          <!--Icono de instagram-->
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-instagram"
@@ -209,7 +175,8 @@
               <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
               <path d="M16.5 7.5l0 .01" />
             </svg>
-            <!--Icono de youtube-->
+              <!--Icono de youtube-->
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-youtube"
@@ -230,38 +197,38 @@
             </svg>
           </div>
         </div>
+        <!--Tabla de productos-->
         <div>
-          <!--Tabla de productos-->
-          <h3>
-              Productos
-          </h3>
+          <h3>Productos</h3>
           <h4>Hardware</h4>
           <h4>Perifericos</h4>
           <h4>Mantenimiento</h4>
-      </div>
-      <div>
-          <!--Tablam de servicios-->
+        </div>
+        <!--Tabla de servicios-->
+        <div>
           <h3>Servicios</h3>
           <h4>Desarrollo web</h4>
           <h4>Escudo digital</h4>
           <h4>Capacitacion</h4>
           <h4>Soporte Tecnico</h4>
           <h4>Consultoria</h4>
-      </div>
-      <div>
-          <!--Enlace a Quienes somos-->
-          <h3>Quienes Somos</h3>
-          <a href="history.html">Historia</a>
-          <a href="team.html">Nuestro Equipo</a>
-      </div>
+        </div>
         <div>
-          <!--Tabla de contactos-->
+              <!--Enlace a Quienes somos-->
+              <h3>Quienes Somos</h3>
+              <a href="../Pages/history.html">Historia</a>
+              <a href="../Pages/team.html">Nuestro Equipo</a>
+        </div>
+         <!--Tabla de contactos-->
+
+        <div>
           <h3>Contacto</h3>
           <p>+56 9 2315412412</p>
           <p>TechAraucania@gmail.cl</p>
         </div>
       </div>
     </footer>
+
+    <script src="../js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
 </html>

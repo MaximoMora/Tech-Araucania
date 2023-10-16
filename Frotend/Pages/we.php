@@ -1,3 +1,8 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
