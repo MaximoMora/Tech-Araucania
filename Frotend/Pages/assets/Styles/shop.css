@@ -1,0 +1,105 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #DAE2DF;
+
+}
+
+
+.nav {    
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.navUser {
+    padding: 0px 8rem;
+}
+
+.navTitle {
+    display: flex;
+}
+
+.navTitle svg {
+    width: 80px;
+    height: 80px;
+
+}
+
+.navLink {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navLink a {
+    margin: 0px 20px 0px 20px;
+    font-weight:900;
+    text-decoration: none;
+    color: black;
+}
+
+.navInput {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.navInput svg {
+    margin: 25px;
+    width: 40px;
+    height: 40px;
+
+}
+
+
+.quality {
+    background-color:#1E2019;
+    display: flex;
+    justify-content: space-around;
+}
+
+.qualityTypes {
+    display: flex;
+}
+
+.qualityTypes svg {
+    color: #548C2F;
+    width: 40px;
+}
+
+.qualityTypesText {
+    display: block;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;
+    color: white;
+}
+
+.qualityTypesText h3 {
+    color: #548C2F;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(185, 185, 243);
+    justify-content:space-around;
+
+
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    display: flex;
+}
+
+.footerText a{
+    text-decoration: none;
+    color: black;
+    margin: 20px  0px;
+
+}
