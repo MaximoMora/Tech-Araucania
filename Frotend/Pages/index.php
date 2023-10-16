@@ -1,12 +1,6 @@
 <?php
 include('sesiones.php');
 echo "hola";
-
-if (isset($_SESSION['correo']) === true) {
-    echo '<a href="cerrar_sesion.php">Cerrar sesión</a>';
-} else {
-    echo '<a href="login.php">Iniciar sesión</a>';
-}
 ?>
 
 <!--El archivo es de tipo html-->
@@ -39,6 +33,9 @@ if (isset($_SESSION['correo']) === true) {
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
+                  </li> 
+                  <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
@@ -65,9 +62,6 @@ if (isset($_SESSION['correo']) === true) {
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
-                <li>
-                    <a href="login.php">Inicio sesion</a>
-                </li>
               </div>
             </div>
           </nav>
@@ -217,7 +211,15 @@ if (isset($_SESSION['correo']) === true) {
 
 
 
+<script>
+      var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
+      var botonnn = document.getElementById("botonnnn");
 
+      if(usuarioIniciado){
+        botonnn.textContent = "Cerrar Sesion";
+        botonnn.href = "cerrar_sesion.php";
+      }
+</script>
 </body>
 
 </html>
