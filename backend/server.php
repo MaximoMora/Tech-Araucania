@@ -17,13 +17,14 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $option = $data["option"];
 
     if ($option == "register") {
+        $rut = $data["rut"];
         $name = $data["name"];
         $password = $data["password"];
         $lastName = $data["lastName"];
         $direction = $data["direction"];
         $email = $data["email"];
         
-        $createUser = "INSERT INTO user (name, password,lastName,direction,email) VALUES ('$name', '$password','$lastName','$direction','$email');";
+        $createUser = "INSERT INTO user (name, password,lastName,direction,email,rut) VALUES ('$rut','$name', '$password','$lastName','$direction','$email');";
         $consult = mysqli_query($database, $createUser);
 
         $response = array(
