@@ -96,7 +96,7 @@
             </form>
         </div>
         <div class="sign-in">
-            <form class="formulario">
+            <form class="formulario" action="Inicio_sesion.php" method="POST">
                 <h2 class="sign-up-btn">Iniciar Sesion</h2>
                 <div class="iconos">
                     <a href="https://www.instagram.com/ferreteriabertuzzi/?hl=es">
@@ -110,12 +110,10 @@
                     </div>
                     </a>
                 </div>
-                <form action="Inicio_sesion.php" method="post"></form>
-                  <p class="cuenta-gratis"></p>
-                  <input type="text"  id="rut" placeholder="rut">
-                  <input type="email" id="email" placeholder="correo">
-                  <input type="button" placeholder="Iniciar Sesion" name="subir">
-                </form>
+                <p class="cuenta-gratis"></p>
+                <input type="text" name="rut" id="rut" placeholder="rut">
+                <input type="email" name="email" id="email" placeholder="correo">
+                <button type="submit" name="subir">Iniciar Sesion</button>
             </form>
             <div class="welcome-back">
                 <div class="message message-register">
