@@ -173,7 +173,7 @@
 
 
 
-    /*
+
     document.addEventListener("DOMContentLoaded", function() {
         const btn = document.getElementById("keso");
         btn.addEventListener("click", function(){
@@ -206,7 +206,9 @@
             })
         });
     });
-    */
+
+
+    
   </script>
 </body>
 
