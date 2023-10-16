@@ -1,3 +1,7 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
 <!--El idioma del documento-->
@@ -26,26 +30,26 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Productos</a>
+                <a class="nav-link" href="products.php">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
+                <a class="nav-link" href="services.php">Servicios</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Nosotros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
                   <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
+                <a class="nav-link" href="contact.php">Contacto</a>
               </li>
             </ul>
             <form class="d-flex" role="search">

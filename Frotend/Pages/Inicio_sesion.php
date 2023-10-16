@@ -16,14 +16,15 @@ if(isset($_POST["subir"])){
 
     print_r($registro);
 
-    session_start();
-    $_SESSION['correo']=$registro;
+    
 
     $numeroregs = $sql->rowCount();
 
     if($numeroregs>=1){
+        session_start();
+        $_SESSION['correo']=$registro;
         echo "Bienvenido....";
-        header('Location:products.html');
+        header('Location:products.php');
     }else{
 
     }

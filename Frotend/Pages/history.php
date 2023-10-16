@@ -1,3 +1,8 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
+
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
 <html lang="en">
