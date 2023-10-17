@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../Styles/products.css" /> <!--Vinculamos el archivo .css para poder estilizar de mejor manera-->
+  <link rel="stylesheet" href="assets/Styles/products.css" /> <!--Vinculamos el archivo .css para poder estilizar de mejor manera-->
   <title>Document</title> <!--Titulo de la pag (TechAraucania)-->
 </head>
 
@@ -72,77 +72,106 @@
     </nav>
   </header>
   <main>
-    <!--Agregamos un div, esto sera todas las otras secciones de la pagina, y de paso al div le asignamos una seccion-->
-    <div id="cover-ctn-search"> </div>
 
-
-<div class="catalogo">
-    <div class="categoria">
-        <tr>      
-            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen1(this)"
-                onmouseover="MeteImagen1(this)"
-                src="../Images/Products/cpu.webp" id="vacio" /> <br>
-                </a>
-            </td>
-        </tr>
-    </div>
-    <div class="categoria">
-        <tr>    
-            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen(this)"
-                onmouseover="MeteImagen2(this)"
-                src="../Images/Products/mausito.jpg" id="vacio1" /> <br>
-                </a>
-            </td> 
-        </tr>
-    </div> 
-    <div class="categoria">
-        <tr>
-            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen3(this)"
-                onmouseover="MeteImagen2(this)"
-                src="../Images/Products/limpiador.jpg" id="vacio2" /> <br>
-                </a>
-            </td> 
-        </tr>
-    </div>
-    
+  <div class="container is-fluid mb-6">
+    <h1 class="title">Productos</h1>
+    <h2 class="subtitle">Lista de productos por categoría</h2>
 </div>
 
-     </main>
-  <footer>
-    <div class="footer-container"> <!--Todo esto es la parte de abajo de la pagina-->
-      <div>
-        <h1>Tech Araucania</h1> <!--Nombre de la pagina-->
-        <h4>Sigueno en</h4>
-        <div>
-          <!--Iconos De Redes Sociales-->
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-            <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-            <path d="M16.5 7.5l0 .01" />
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
-            <path d="M10 9l5 3l-5 3z" />
-          </svg>
+<div class="container pb-6 pt-6">
+    <div class="columns">
+
+
+
+        <div class="column is-one-third">
+            <h2 class="title has-text-centered">Categorías</h2>
+            <?php
+            include "conexion_productos.php";
+            $conn=$conn->query("SELECT * FROM productos");
+            if($conn->rowCount()>0){
+                $conn=$conn->fetchAll();
+                foreach($conn as $row){
+                    echo '<option value="' .$row['categoria'].'</option>';
+                }
+            }
+            $conn=null;
+            ?>
+
+            <a href="#" class="button is-link is-inverted is-fullwidth">Nombres de categorías</a>
+
+            <p class="has-text-centered" >No hay categorías registradas</p>
+
         </div>
-      </div>
-      <div>
+
+
+
+        <div class="column">
+
+            <h2 class="title has-text-centered">Nombre de categoría</h2>
+            <p class="has-text-centered pb-6" >Ubicacion de categoría</p>
+
+            <article class="media">
+                <figure class="media-left">
+                    <p class="image is-64x64">
+                        <img src="./img/producto.png">
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                        <p>
+                            <strong>1 - Nombre de producto</strong><br>
+                            <strong>CODIGO:</strong> 00000000, 
+                            <strong>PRECIO:</strong> $10.00, 
+                            <strong>STOCK:</strong> 21, 
+                            <strong>CATEGORIA:</strong> Nombre categoria, 
+                            <strong>REGISTRADO POR:</strong> Nombre de usuario
+                        </p>
+                    </div>
+                    <div class="has-text-right">
+                        <a href="#" class="button is-link is-rounded is-small">Imagen</a>
+                        <a href="#" class="button is-success is-rounded is-small">Actualizar</a>
+                        <a href="#" class="button is-danger is-rounded is-small">Eliminar</a>
+                    </div>
+                </div>
+            </article>
+
+            <p class="has-text-centered" >
+                <a href="#" class="button is-link is-rounded is-small mt-4 mb-4">
+                    Haga clic acá para recargar el listado
+                </a>
+            </p>
+
+            <p class="has-text-centered" >No hay registros en el sistema</p>
+
+            <hr>
+
+            <p class="has-text-right">Mostrando productos <strong>1</strong> al <strong>17</strong> de un <strong>total de 17</strong></p>
+
+            <nav class="pagination is-centered is-rounded" role="navigation" aria-label="pagination">
+                <a class="pagination-previous" href="#">Anterior</a>
+
+                <ul class="pagination-list">
+                    <li><a class="pagination-link" href="#">1</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link is-current" href="#">2</a></li>
+                    <li><a class="pagination-link" href="#">3</a></li>
+                    <li><span class="pagination-ellipsis">&hellip;</span></li>
+                    <li><a class="pagination-link" href="#">3</a></li>
+                </ul>
+
+                <a class="pagination-next" href="#">Siguiente</a>
+            </nav>
+
+            
+
+            
+
+            <h2 class="has-text-centered title" >Seleccione una categoría para empezar</h2>
+
+        </div>
+
+    </div>
+</div>
         <!--Tabla de productos-->
         <h3>
           Productos
