@@ -96,11 +96,11 @@ echo "hola";
     <div class="nav-container">
       <nav class="a-container">
         <a href="login.php">Inicia Sesion</a>
-        <a href="index.html">Pagina Inicial</a>
-        <a href="products.html">Productos</a>
-        <a href="services.html">Servicios</a>
-        <a href="we.html">Quienes Somos</a>
-        <a href="contact.html">Contacto</a>
+        <a href="index.php">Pagina Inicial</a>
+        <a href="products.php">Productos</a>
+        <a href="services.php">Servicios</a>
+        <a href="we.php">Quienes Somos</a>
+        <a href="contact.php">Contacto</a>
       </nav>
     </div>
     <main>
@@ -109,7 +109,7 @@ echo "hola";
       <div class="main-container">
         <div class="main-content-container"> <!--Agregamos esta div para crear la seccion de Historia-->
             <div class="main-content-title-containe">
-                <h1><a style="color: white;" href="../Pages/history.html">Historia</a></h1> <!--Link hacia la pagina de historia-->
+                <h1><a style="color: white;" href="../Pages/history.php">Historia</a></h1> <!--Link hacia la pagina de historia-->
             </div>
             <div class="main-content-text-containe">
               <h2>Breve historia de nuestra empresa</h2> <!--Texto de Tech Araucania-->

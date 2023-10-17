@@ -32,26 +32,26 @@ echo "hola";
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
                   </li> 
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                  <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="products.html">Productos</a>
+                  <a class="nav-link" href="products.php">Productos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="services.html">Servicios</a>
+                  <a class="nav-link" href="services.php">Servicios</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Nosotros
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                    <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
                     <li><hr class="dropdown-divider"></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contacto</a>
+                  <a class="nav-link" href="contact.php">Contacto</a>
                 </li>
               </ul>
               <form class="d-flex" role="search">
@@ -139,8 +139,8 @@ echo "hola";
         <div>
             <!--Enlace a Quienes somos-->
             <h3>Quienes Somos</h3>
-            <a href="../Pages/history.html">Historia</a>
-            <a href="../Pages/team.html">Nuestro Equipo</a>
+            <a href="../Pages/history.php">Historia</a>
+            <a href="../Pages/team.php">Nuestro Equipo</a>
         </div>
         <!--Tabla de contactos-->
         <div>

@@ -16,7 +16,7 @@
     <script src="assets/js/login.js"></script>
   </head>
 <!--Body contiene todo el contenido que ve en la pagina web-->
-<body background="../Images/fondo.jpg">
+<body>
     <!--El header en la parte de arriba de nuestra pagina, estara el titulo la barra de busqueda-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -27,29 +27,29 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="login.html">Inicio de sesion</a>
+                <a class="nav-link active" aria-current="page" href="login.php">Inicio de sesion</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Productos</a>
+                <a class="nav-link" href="products.php">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
+                <a class="nav-link" href="services.php">Servicios</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Nosotros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
                   <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contacto</a>
+                <a class="nav-link" href="contact.php">Contacto</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -126,6 +126,13 @@
     <br>
 
     </main>
+<style>
+  body { 
+                background-image: url("../Images/Tecnología.gif"); 
+                background-position: center 25%; 
+                background-size: cover; 
+            } 
+</style>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("keso");
@@ -159,6 +166,7 @@ document.addEventListener("DOMContentLoaded", function() {
         })
     });
 });
+
 </script>
 </body>
 

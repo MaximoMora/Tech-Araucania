@@ -33,21 +33,21 @@ echo "hola";
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
               </li> 
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="products.html">Productos</a>
+                <a class="nav-link" href="products.php">Productos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services.html">Servicios</a>
+                <a class="nav-link" href="services.php">Servicios</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Nosotros
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                  <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
                   <li><hr class="dropdown-divider"></li>
                 </ul>
               </li>

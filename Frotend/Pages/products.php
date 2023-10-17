@@ -25,32 +25,32 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
+              </li> 
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="login.html">Inicio Sesion</a>
+              <a class="nav-link" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" href="products.php">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="products.html">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Servicios</a>
+              <a class="nav-link" href="services.php">Servicios</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Nosotros
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="team.html">Quienes Somos</a></li>
-                <li><a class="dropdown-item" href="history.html">Historia</a></li>
+                <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                <li><a class="dropdown-item" href="history.php">Historia</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contacto</a>
+              <a class="nav-link" href="contact.php">Contacto</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -310,7 +310,13 @@
 
   ?>
   <script src="../js/products.js">
+        var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
+      var botonnn = document.getElementById("botonnnn");
 
+      if(usuarioIniciado){
+        botonnn.textContent = "Cerrar Sesion";
+        botonnn.href = "cerrar_sesion.php";
+      }
 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
