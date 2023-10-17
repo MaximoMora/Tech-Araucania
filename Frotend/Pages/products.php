@@ -14,7 +14,7 @@
   <title>Document</title> <!--Titulo de la pag (TechAraucania)-->
 </head>
 
-<body background="../Images/fondo.jpg"> <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
+<body > <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
 
 
   <header>
@@ -29,12 +29,24 @@
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
               </li> 
             <li class="nav-item">
+<<<<<<< HEAD
               <a class="nav-link" aria-current="page" href="index.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="products.php">Productos</a>
             </li>
             <li class="nav-item">
+=======
+              <a class="nav-link" aria-current="page" href="login.php">Inicio Sesion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="products.php">Productos</a>
+            </li>
+            <li class="nav-item">
+>>>>>>> be337f0c30cafa5d733f7ce3830712369aa3227e
               <a class="nav-link" href="services.php">Servicios</a>
             </li>
             <li class="nav-item dropdown">
@@ -70,15 +82,15 @@
           <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
             <a href="Products/Ventilador.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
               <img id="imagen-1" onmouseover="OnMouseOver('product-photo-1')" onmouseout="OutMouseOver('product-photo-1')" alt="ventilador" height="200" />
-              <h2 id="titulo-1"></h2> <!--Nombre del producto-->
-              <h3 id="precio-1" style="color: white">$59.990</h3> <!--Precio-->
+              <h2 id="titulo-1"  class="text" ></h2> <!--Nombre del producto-->
+              <h3 id="precio-1"  class="text" ></h3> <!--Precio-->
             </a>
           </div>
           <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
             <a href="../Pages/Products/Tarjeta.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
               <img id="imagen-4" onmouseover="OnMouseOver('product-photo-2')" onmouseout="OutMouseOver('product-photo-2')" alt="cpu" height="200"  />
-              <h2 id="titulo-4"></h2>
-              <h3 id="precio-4" style="color: white">$35.990</h3> <!--Precio-->
+              <h2 id="titulo-4"  class="text"></h2>
+              <h3 id="precio-4"  class="text"></h3> <!--Precio-->
             </a>
           </div>
         </div>
@@ -88,9 +100,9 @@
           <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
             <a href="Products/audifonos.html"> <!--Al presionar sobre el producto lleva a otro html que dira que el producto fue agregado al carro-->
               <img id="imagen-2" onmouseover="OnMouseOver('product-photo-3')" onmouseout="OutMouseOver('product-photo-3')" alt="audifonos" height="200"  />
-              <h2  id="titulo-2"></h2>
+              <h2  id="titulo-2"  class="text"  class="title-product"></h2>
 
-              <h3 id="precio-2" style="color: white"></h3> <!--Precio-->
+              <h3 id="precio-2"  class="text" ></h3> <!--Precio-->
             </a>
           </div>
           <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
@@ -99,9 +111,9 @@
                 a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
                  a su estado normal-->
               <img id="imagen-5" onmouseover="OnMouseOver('product-photo-4')" onmouseout="OutMouseOver('product-photo-4')" alt="maus" height="200" />
-              <h2 id="titulo-5"></h2>
+              <h2 id="titulo-5"  class="text"  class="title-product"></h2>
 
-              <h3 id="precio-5" style="color: white">$21.000</h3> <!--Precio-->
+              <h3 id="precio-5"  class="text" ></h3> <!--Precio-->
             </a>
           </div>
         </div>
@@ -114,9 +126,9 @@
                 a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
                  a su estado normal-->
               <img id="imagen-3" onmouseover="OnMouseOver('product-photo-5')" onmouseout="OutMouseOver('product-photo-5')" alt="limpiador" height="200"  />
-              <h2 id="titulo-3"></h2>
+              <h2 id="titulo-3"  class="text" ></h2>
               <!--Nombre del producto-->
-              <h3 id="precio-3" style="color: white">$13.990</h3> <!--Precio-->
+              <h3 id="precio-3"  class="text" ></h3> <!--Precio-->
             </a>
           </div>
           <div class="producto"> <!--Div que tendra las propiedades de cada Producto, imagen, precio etc-->
@@ -125,14 +137,29 @@
                 a la funcion OnMouseOver() que agranda la imagen mientras que OutMouse over la llevara
                  a su estado normal-->
               <img id="imagen-6" onmouseover="OnMouseOver('product-photo-6')" onmouseout="OutMouseOver('product-photo-6')" alt="pasta" height="200"/>
-              <h2 id="titulo-6"></h2>
+              <h2 id="titulo-6" class="text" ></h2>
 
-              <h3 id="precio-6" style="color: white">$10.000</h3> <!--Precio-->
+              <h3 id="precio-6" class="text" ></h3> <!--Precio-->
             </a>
           </div>
         </div>
       </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Aqui es el "carrusel" de la pagina-->
     <h1>Mas Productos</h1>
     <div class="carrusel"> <!--Clase con las propiedades del carrusel-->

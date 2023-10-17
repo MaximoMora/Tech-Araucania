@@ -1,7 +1,3 @@
-<?php
-include('sesiones.php');
-echo "hola";
-?>
 
 <!DOCTYPE html>
 <html lang="en">
