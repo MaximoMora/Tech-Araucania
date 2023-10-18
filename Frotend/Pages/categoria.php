@@ -90,23 +90,33 @@
             $conn=$conn->query("SELECT * FROM productos");
             if($conn->rowCount()>0){
                 $conn=$conn->fetchAll();
-                foreach($conn as $row){
-                    echo '<option value="' .$row['categoria'].'</option>';
+                foreach ($categories as $row) {
+                  echo '<a href="index.php?index.php?vista=categoria=" class="button is-link is-inverted is-fullwidth">' .$row['categoria'].'</a>';
                 }
+            } else {
+              echo '<p class="has-text-centered">No hay categorías registradas</p>';
             }
-            $conn=null;
             ?>
 
-            <a href="#" class="button is-link is-inverted is-fullwidth">Nombres de categorías</a>
-
-            <p class="has-text-centered" >No hay categorías registradas</p>
+           
 
         </div>
 
 
 
         <div class="column">
-
+          <?php
+          if (isset($_GET['categoria'])) {
+            $categoria = $_GET['categoria'];
+            $categoria=$categoria->query("SELECT * FROM productos WHERE categoria = '$categoria'");
+            if($categoria->rowCount()>0){
+              $categoria=$categoria->fetchAll();
+              foreach($categoria as $row){
+                echo '<option value="' . $row['categoria'] . '"></option>';
+              }
+            }
+          }
+          ?>
             <h2 class="title has-text-centered">Nombre de categoría</h2>
             <p class="has-text-centered pb-6" >Ubicacion de categoría</p>
 

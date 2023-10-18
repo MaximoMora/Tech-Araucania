@@ -79,18 +79,18 @@
 <div class="catalogo">
     <div class="categoria">
         <tr>      
-            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php">
+            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php?categoria=Componentes">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen1(this)"
                 onmouseover="MeteImagen1(this)"
-                src="../Images/Products/cpu.webp" id="vacio" /> <br>
+                src="../Images/Products/cpu.webp" id="vacio"/> <br>
                 </a>
             </td>
         </tr>
     </div>
     <div class="categoria">
         <tr>    
-            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php">
+            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php?categoria=Perifericos">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen(this)"
                 onmouseover="MeteImagen2(this)"
@@ -101,7 +101,7 @@
     </div> 
     <div class="categoria">
         <tr>
-            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php">
+            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php?categoria=Mantenimiento">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen3(this)"
                 onmouseover="MeteImagen2(this)"

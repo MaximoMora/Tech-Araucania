@@ -47,12 +47,12 @@ echo "hola";
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Nosotros
-                    </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
                       <li><a class="dropdown-item" href="history.php">Historia</a></li>
                       <li><hr class="dropdown-divider"></li>
                     </ul>
+                    </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contacto</a>
