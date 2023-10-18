@@ -87,9 +87,9 @@
             <h2 class="title has-text-centered">Categorías</h2>
             <?php
             include "conexion_productos.php";
-            $conn=$conn->query("SELECT * FROM productos");
-            if($conn->rowCount()>0){
-                $conn=$conn->fetchAll();
+            $result=$conn->query("SELECT * FROM productos");
+            if($result->rowCount()>0){
+                $categories=$result->fetchAll();
                 foreach ($categories as $row) {
                   echo '<a href="index.php?index.php?vista=categoria=" class="button is-link is-inverted is-fullwidth">' .$row['categoria'].'</a>';
                 }
@@ -107,16 +107,19 @@
         <div class="column">
           <?php
           if (isset($_GET['categoria'])) {
-            $categoria = $_GET['categoria'];
-            $categoria=$categoria->query("SELECT * FROM productos WHERE categoria = '$categoria'");
-            if($categoria->rowCount()>0){
-              $categoria=$categoria->fetchAll();
-              foreach($categoria as $row){
-                echo '<option value="' . $row['categoria'] . '"></option>';
+            $categoria = $_GET['categoria']; 
+            $conect = $conn;
+            $result = $conect->query("SELECT * FROM productos WHERE categoria = '$categoria'");
+            if ($result->rowCount() > 0) {
+              $categorias = $result->fetchAll();
+              foreach ($categorias as $row) {
+                echo '<h2 class="title has-text-centered">' . $row['categoria'] . '</h2>';
               }
             }
           }
           ?>
+        </div>
+
             <h2 class="title has-text-centered">Nombre de categoría</h2>
             <p class="has-text-centered pb-6" >Ubicacion de categoría</p>
 
@@ -267,5 +270,4 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-
 </html>
