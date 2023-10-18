@@ -1,3 +1,7 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,7 +21,7 @@
   </head>
   <!--Body contiene todo el contenido que ve en la pagina web-->
 
-  <body style="background-color: gray;">
+  <body background="../Images/Services/fondo.png">
     <!--El header en la parte de arriba de nuestra pagina, estara el titulo la barra de busqueda-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">

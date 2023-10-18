@@ -22,7 +22,7 @@ echo "hola";
 
   <!--Body contiene todo el contenido que ve en la pagina web-->
 
-  <body background="../Images/fondo.jpg">
+  <body background="../Images/fondo3.jpg">
     <header class="header-container"> <!--Asignamos una clase al encabezado-->
       <h1 id="header-title">Tech Araucania</h1>  <!--Titulo del encabezado-->
       <div class="search-container"> <!--Todo esto es el buscador de productos (No funciona)-->

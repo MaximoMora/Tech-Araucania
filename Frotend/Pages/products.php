@@ -1,3 +1,8 @@
+<?php
+include('sesiones.php');
+echo "hola";
+?>
+
 <!--El archivo es de tipo html-->
 <!DOCTYPE html>
 <html lang="en">
@@ -28,16 +33,7 @@
           <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
               </li> 
-            <li class="nav-item">
 
-              <a class="nav-link" aria-current="page" href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="products.php">Productos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="login.php">Inicio Sesion</a>
-            </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.php">Home</a>
             </li>

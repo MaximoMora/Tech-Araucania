@@ -19,7 +19,7 @@ echo "hola";
   </head>
   <!--Body contiene todo el contenido que ve en la pagina web-->
 
-  <body background="../Images/fondo.jpg">
+  <body background="../Images/fondo3.jpg">
     <!--El header en la parte de arriba de nuestra pagina, estara el titulo la barra de busqueda-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">

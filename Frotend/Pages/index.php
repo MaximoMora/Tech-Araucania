@@ -36,24 +36,26 @@ echo "hola";
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
                   </li> 
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="products.php">Productos</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" href="services.php">Servicios</a>
+                    <a class="nav-link" href="services.php">Servicios</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Nosotros
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
-                      <li><a class="dropdown-item" href="history.php">Historia</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                    </ul>
+                        Nosotros
                     </a>
-                  </li>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
+                        <li><a class="dropdown-item" href="history.php">Historia</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                    </ul>
+                </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contacto</a>
                   </li>
@@ -220,6 +222,7 @@ echo "hola";
         botonnn.href = "cerrar_sesion.php";
       }
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
 </html>

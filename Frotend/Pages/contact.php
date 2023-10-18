@@ -16,11 +16,11 @@ echo "hola";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Styles/contact.css" />
+    <link rel="stylesheet" href="assets/Styles/contact.css" />
     <title>Contacto</title>
   </head>
 
-  <body background="../Images/fondo.jpg"> <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
+  <body background="../Images/Contact/849R.gif"> <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -66,28 +66,36 @@ echo "hola";
     <main>
       <h2>Contactate con nosotros</h2>
       <div class="main-content">
-        <!--Formulario de contacto-->
-        <section>
-          <h2>Formulario</h2>
-          <form action="">
-            <fieldset>
-              <legend>Contactacnos llenando todos los campos</legend>
-              <div class="form-label-container">
-                <label for="">Nombre</label>  <!--Espacio para poner el nombre-->
-                <input type="text" />
-              </div> 
-                <label for="">Telefono</label>  <!--Espacio para poner el Telefono-->
-                <input type="text" />
-              <div class="form-label-container">
-                <label for="">Correo</label> <!--Espacio para poner el Correo-->
-                <input type="text" />
-              </div>
-              <label for="">Mensaje</label> <!--Espacio para poner el  Mensaje-->
-
-              <button onclick="SendInfo()">Enviar</button>
-            </fieldset>
-          </form>
-        </section>
+      <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Opinión:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                </div>
+                
+                <div>
+                    <select name="selectContactForm" id="selectContactForm">
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="felicitaciones">Felicitaciones</option>
+                        <option value="consulta">Consulta</option>
+                    </select>
+                </div> 
+                <br>               
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
         <script> 
         var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
         var botonnn = document.getElementById("botonnnn");

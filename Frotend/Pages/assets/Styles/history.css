@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat; /*No se repetira el fondo*/
     background-size: cover; /* El fondo se representa al tamaño de la zona de posicionamiento de fondo*/
     background-position: left 25% top 30%;  /*Como va a estar posicionado el fondo*/
+    
 }
 
 .header-container {

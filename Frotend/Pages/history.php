@@ -19,7 +19,7 @@ echo "hola";
     <link rel="stylesheet" href="assets/Styles/history.css">
     <title>Historia</title> 
 </head>
-<body background="../Images/fondo.jpg">   
+<body background="../Images/fondo3.jpg">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
