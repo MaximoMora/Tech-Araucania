@@ -1,32 +1,35 @@
 <?php
-
-if(isset($_POST["subir"])){
+if (isset($_POST["subir"])) {
     include("conexion_2.php");
 
-    $rut=($_POST['rut']);
-    $correo=($_POST['email']);
+    $rut = ($_POST['rut']);
+    $correo = ($_POST['email']);
 
-    $sql=$conn->prepare("SELECT * FROM usuarios WHERE rut=:rut AND correo=:correo");
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
-    $sql->bindParam("rut",$rut, PDO::PARAM_INT);
-    $sql->bindParam("correo",$correo, PDO::PARAM_STR);
-    $sql->execute();
 
-    $registro=$sql->fetch(PDO::FETCH_ASSOC);
+    if ($conn->connect_error) {
+        die("Error de conexión: " . $conn->connect_error);
+    }
+    $rut = $conn->real_escape_string($rut);
+    $correo = $conn->real_escape_string($correo);
 
-    print_r($registro);
 
-    
+    $sql = "SELECT * FROM usuarios WHERE rut='$rut' AND correo='$correo'";
 
-    $numeroregs = $sql->rowCount();
+    $result = $conn->query($sql);
 
-    if($numeroregs>=1){
+    if ($result->num_rows >= 1) {
+        $registro = $result->fetch_assoc();
         session_start();
-        $_SESSION['correo']=$registro;
-        echo "Bienvenido....";
-        header('Location:products.php');
-    }else{
+        $_SESSION['correo'] = $registro;
+        echo "Bienvenido";
+        header('Location: products.php');
+    } else {
 
     }
+
+
+    $conn->close();
 }
 ?>

@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('localhost', 'root', '', 'login');
+$conn = new mysqli('db.inf.uct.cl', 'jpoblete', '21736669', 'A2023_jpoblete');
 $response = "";
 
 if ($conn->connect_error) {

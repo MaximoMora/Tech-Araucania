@@ -1,17 +1,18 @@
 <?php
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "login";
+$servername = "db.inf.uct.cl";
+$username = "jpoblete";
+$password = "21736669";
+$dbname = "A2023_jpoblete";
 
-try {
+// Crear una conexión a la base de datos
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "<script> alert('Conexion exitosa'); </script>";
-} catch(PDOException $e) {
-    echo "Error: " . $e->getMessage();
+// Verificar la conexión
+if ($conn->connect_error) {
+    die("Error de conexión: " . $conn->connect_error);
+} else {
+    echo "Conexión exitosa";
 }
 ?>
