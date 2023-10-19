@@ -54,6 +54,17 @@ echo "hola";
               <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contacto</a>
               </li>
+ 	      <li class="nav-item">
+                    <a class="nav-link">
+                        <?php
+                        if (!isset($_SESSION['correo'])) {
+                            echo "<div><b>No has iniciado sesión</b></div>";
+                        } else {
+                            print_r($_SESSION['correo']);
+                        }
+                        ?></a>
+              </li>
+
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

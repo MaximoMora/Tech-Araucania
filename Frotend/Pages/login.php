@@ -51,6 +51,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contacto</a>
               </li>
+ 	      <li class="nav-item">
+                    <a class="nav-link">
+                        <?php
+                        if (!isset($_SESSION['correo'])) {
+                            echo "<div><b>No has iniciado sesión</b></div>";
+                        } else {
+                            print_r($_SESSION['correo']);
+                        }
+                        ?></a>
+              </li>
+
             </ul>
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -137,7 +148,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const btn = document.getElementById("keso");
     btn.addEventListener("click", function(){
-        event.preventDefault();
+	event.preventDefault();
         const rut = document.getElementById("ruti").value;
         const nombre = document.getElementById("nombreci").value;
         const apellido = document.getElementById("apellidi").value;
@@ -155,18 +166,22 @@ document.addEventListener("DOMContentLoaded", function() {
             method: 'POST',
             body: nuevoform 
         })
-        .then(response => response.json())
+        .then(response => {
+        if(response.ok){
+          alert("exito");
+          window.location.href = "products.php";
+        }}
+        )
+
         .then(data => {
             if (data.error) {
-                console.error(data.error);
+                alert(data.error);
             } else {
-                
-                
+                console.log("Registro exitoso");         
             }
         })
     });
 });
-
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

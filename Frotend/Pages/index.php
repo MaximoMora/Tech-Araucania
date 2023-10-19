@@ -7,7 +7,7 @@ echo "hola";
 <!DOCTYPE html>
 <!--El idioma del documento-->
 <html lang="en">
-<!--  el elemento head se utiliza dar informaciÃ³n y metadatos sobre un archivo HTML, pero no muestra en la pÃ¡gina web.-->
+<!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
 
 <head>
     <meta charset="utf-8">
@@ -59,6 +59,16 @@ echo "hola";
                   <li class="nav-item">
                     <a class="nav-link" href="contact.php">Contacto</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link">
+                        <?php
+                        if (!isset($_SESSION['correo'])) {
+                            echo "<div><b>No has iniciado sesión</b></div>";
+                        } else {
+                            print_r($_SESSION['correo']);
+                        }
+                        ?></a>
+                        </li>
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

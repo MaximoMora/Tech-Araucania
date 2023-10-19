@@ -22,7 +22,11 @@ if (isset($_POST["subir"])) {
     if ($result->num_rows >= 1) {
         $registro = $result->fetch_assoc();
         session_start();
+<<<<<<< HEAD
+        $_SESSION['correo'] = "Hola!!! ". $registro['nombre'];
+=======
         $_SESSION['correo'] = $registro;
+>>>>>>> 267243af888671b2c01b5d5b20780e79f16d4393
         echo "Bienvenido";
         header('Location: products.php');
     } else {
