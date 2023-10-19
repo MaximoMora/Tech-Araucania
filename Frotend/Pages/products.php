@@ -1,5 +1,6 @@
 <?php
 include('sesiones.php');
+echo "hola";
 ?>
 
 <!--El archivo es de tipo html-->
@@ -18,7 +19,7 @@ include('sesiones.php');
   <title>Document</title> <!--Titulo de la pag (TechAraucania)-->
 </head>
 
-<body > <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
+<body> <!-- Ponemos un fondo (background) a la pagina para estilizar mas.-->
 
 
   <header>
@@ -29,9 +30,9 @@ include('sesiones.php');
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
-              </li> 
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.php">Home</a>
@@ -57,17 +58,6 @@ include('sesiones.php');
             <li class="nav-item">
               <a class="nav-link" href="contact.php">Contacto</a>
             </li>
- 	    <li class="nav-item">
-                    <a class="nav-link">
-                        <?php
-                        if (!isset($_SESSION['correo'])) {
-                            echo "<div><b>No has iniciado sesión</b></div>";
-                        } else {
-                            print_r($_SESSION['correo']);
-                        }
-                        ?></a>
-            </li>
-
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -82,54 +72,38 @@ include('sesiones.php');
     <div id="cover-ctn-search"> </div>
 
 
-<div class="catalogo">
-    <div class="categoria">
-        <tr>      
-            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php?categoria_id=1">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen1(this)"
-                onmouseover="MeteImagen1(this)"
-                src="../Images/Products/cpu.webp" id="vacio"/> <br>
-                </a>
-            </td>
-        </tr>
-    </div>
-    <div class="categoria">
-        <tr>    
-            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php?categoria_id=2">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen(this)"
-                onmouseover="MeteImagen2(this)"
-                src="../Images/Products/mausito.jpg" id="vacio1" /> <br>
-                </a>
-            </td> 
-        </tr>
-    </div> 
-    <div class="categoria">
+    <div class="catalogo">
+      <div class="categoria">
         <tr>
-            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php?categoria_id=3">
-                <img alt="Cambiar imagen" height="200"
-                onmouseout= "SacaImagen3(this)"
-                onmouseover="MeteImagen2(this)"
-                src="../Images/Products/limpiador.jpg" id="vacio2" /> <br>
-                </a>
-            </td> 
+          <td>
+            <h3 style="color: black;">Componentes</h3><br><a href="categoria.php?categoria_id=1">
+              <img alt="Cambiar imagen" height="200" onmouseout="SacaImagen1(this)" onmouseover="MeteImagen1(this)" src="../Images/Products/cpu.webp" id="vacio" /> <br>
+            </a>
+          </td>
         </tr>
+      </div>
+      <div class="categoria">
+        <tr>
+          <td>
+            <h3 style="color: black;">Perifericos</h3><br><a href="categoria.php?categoria_id=2">
+              <img alt="Cambiar imagen" height="200" onmouseout="SacaImagen(this)" onmouseover="MeteImagen2(this)" src="../Images/Products/mausito.jpg" id="vacio1" /> <br>
+            </a>
+          </td>
+        </tr>
+      </div>
+      <div class="categoria">
+        <tr>
+          <td>
+            <h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php?categoria_id=3">
+              <img alt="Cambiar imagen" height="200" onmouseout="SacaImagen3(this)" onmouseover="MeteImagen2(this)" src="../Images/Products/limpiador.jpg" id="vacio2" /> <br>
+            </a>
+          </td>
+        </tr>
+      </div>
+
     </div>
-    
-</div>
 
-  <script>
-	var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
-        var botonnn = document.getElementById("botonnnn");
-        
-        if(usuarioIniciado){
-          botonnn.textContent = "Cerrar Sesion";
-          botonnn.href = "cerrar_sesion.php";
-        }
-  </script>
-
-     </main>
+  </main>
   <footer>
     <div class="footer-container"> <!--Todo esto es la parte de abajo de la pagina-->
       <div>
@@ -215,15 +189,13 @@ include('sesiones.php');
       $imagen_binaria = $row["imagen"];
 
       $imagen_base64 = base64_encode($imagen_binaria);
-  
+
       echo '<script>';
       echo 'document.getElementById("titulo-' . $id . '").innerHTML = "' . $nombre . '";';
       echo 'document.getElementById("imagen-' . $id . '").src = "data:image/jpeg;base64,' . $imagen_base64 . '";';
       echo 'document.getElementById("precio-' . $id . '").innerHTML = "' . $precio . '";';
 
       echo '</script>';
-
-    
     }
   } else {
     echo "Imagen no encontrada.";
@@ -233,6 +205,21 @@ include('sesiones.php');
 
   ?>
   <script src="../js/products.js">
+    function AgregarCarrito(id) {
+      console.log(id)
+
+    }
+  </script>
+
+  <script src="../js/products.js">
+    var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
+    var botonnn = document.getElementById("botonnnn");
+
+    if (usuarioIniciado) {
+      botonnn.textContent = "Cerrar Sesion";
+      botonnn.href = "cerrar_sesion.php";
+    }
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 

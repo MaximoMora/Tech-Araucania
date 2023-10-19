@@ -145,10 +145,22 @@
               </div>
               <div class="product-text">
 
-                    <p> Nombre = ' . $product["nombre"] . '</p>
-                    <p> Precio = ' . $product["precio"] . '</p>
+                    <p> Nombre = ' . $product["nombre"] . '  </p>
+                    <p> Precio = ' . $product["precio"] . '  </p>
+                    
+                    <p>  ID ' . $product["id_producto"] .' </p>
 
 
+
+              </div>
+
+              <div class="options">
+
+                <button onclick="AgregarCarrito('.$product["id_producto"] .')" >Agregar a Carrito</button>
+
+
+
+              
 
               </div>
 
@@ -164,6 +176,8 @@
 
 
         </div>
+
+        
 
 
         <article class="media">
@@ -292,6 +306,7 @@
 
     ?>
     <script src="../js/products.js">
+
       var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
       var botonnn = document.getElementById("botonnnn");
 
@@ -299,7 +314,12 @@
         botonnn.textContent = "Cerrar Sesion";
         botonnn.href = "cerrar_sesion.php";
       }
+
+
+
     </script>
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
