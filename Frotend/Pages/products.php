@@ -75,7 +75,7 @@ echo "hola";
 <div class="catalogo">
     <div class="categoria">
         <tr>      
-            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php?categoria=Componentes">
+            <td><h3 style="color: black;">Componentes</h3><br><a href="categoria.php?categoria_id=1">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen1(this)"
                 onmouseover="MeteImagen1(this)"
@@ -86,7 +86,7 @@ echo "hola";
     </div>
     <div class="categoria">
         <tr>    
-            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php?categoria=Perifericos">
+            <td><h3 style="color: black;">Perifericos</h3><br><a href="categoria.php?categoria_id=2">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen(this)"
                 onmouseover="MeteImagen2(this)"
@@ -97,7 +97,7 @@ echo "hola";
     </div> 
     <div class="categoria">
         <tr>
-            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php?categoria=Mantenimiento">
+            <td><h3 style="color: black;">Mantenimiento</h3><br><a href="categoria.php?categoria_id=3">
                 <img alt="Cambiar imagen" height="200"
                 onmouseout= "SacaImagen3(this)"
                 onmouseover="MeteImagen2(this)"
