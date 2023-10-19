@@ -1,21 +1,23 @@
 <?php
-$conn = new mysqli('localhost', 'root', '', 'login');
-$response = "";
+session_start(); // Iniciar la sesión
+
+$conn = new mysqli('db.inf.uct.cl', 'jpoblete', '21736669', 'A2023_jpoblete');
+$response = array();
 
 if ($conn->connect_error) {
-    $response = array('error' => 'Error de conexiÃ³n: ' . $conn->connect_error);
+    $response = array('error' => 'Error de conexión: ' . utf8_encode($conn->connect_error));
 } else {
-    if (isset($_POST["rut"]) && isset($_POST["nombre"]) && isset($_POST["apellido"]) && isset($_POST["correo"]) && isset($_POST["direccion"])) {
-        $rut = ($_POST["rut"]);
+    if (isset($_POST["nombre"]) && isset($_POST["apellido"]) && isset($_POST["direccion"])) {
         $nombre = ($_POST["nombre"]);
         $apellido = ($_POST["apellido"]);
-        $correo = ($_POST["correo"]);
         $direccion = ($_POST["direccion"]);
 
-        $sql = "INSERT INTO usuarios (rut, nombre, apellido, correo, direccion) VALUES ('$rut', '$nombre', '$apellido', '$correo', '$direccion')";
+        $sql = "INSERT INTO usuarios (nombre, apellido, direccion) VALUES ('$nombre', '$apellido', '$direccion')";
 
         if ($conn->query($sql)) {
-            $response = array('success' => 'Registro realizado con Ã©xito.');
+  
+
+            $response = array('success' => 'Registro exitoso');
         } else {
             $response = array('error' => 'Error: ' . $conn->error);
         }
@@ -24,5 +26,6 @@ if ($conn->connect_error) {
     }
 }
 
+header('Content-Type: application/json');
 echo json_encode($response);
 ?>

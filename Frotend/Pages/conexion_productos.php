@@ -1,10 +1,9 @@
 <?php
 
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "productos";
+$servername = "db.inf.uct.cl";
+$username = "jpoblete";
+$password = "21736669";
+$dbname = "A2023_jpoblete";
 
 try {
 
