@@ -7,7 +7,7 @@ echo "hola";
 <!DOCTYPE html>
 <!--El idioma del documento-->
 <html lang="en">
-<!--  el elemento head se utiliza dar información y metadatos sobre un archivo HTML, pero no muestra en la página web.-->
+<!--  el elemento head se utiliza dar informaciï¿½n y metadatos sobre un archivo HTML, pero no muestra en la pï¿½gina web.-->
 
 <head>
     <meta charset="utf-8">
@@ -27,28 +27,29 @@ echo "hola";
         <h1>Tech Araucania</h1>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <!--botÃ³n que se usa para la funcionalidad de abrir y cerrar la barra de navegaciÃ³n -->.
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
+                  <li class="nav-item">  <!-- elemento de lista que contienen el link -->
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
                   </li> 
-                  <li class="nav-item">
+                  <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link" href="products.php">Productos</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link" href="services.php">Servicios</a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Nosotros
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu">  <!--lista no ordenada  -->
                         <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
                         <li><a class="dropdown-item" href="history.php">Historia</a></li>
                         <li>
@@ -56,21 +57,21 @@ echo "hola";
                         </li>
                     </ul>
                 </li>
-                  <li class="nav-item">
+                  <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link" href="contact.php">Contacto</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link">
+                  <li class="nav-item"> <!-- elemento de lista que contienen el link -->
+                    <a class="nav-link"> <!-- link de correo dependiendo de que si esta iniciado sesion o no -->
                         <?php
-                        if (!isset($_SESSION['correo'])) {
-                            echo "<div><b>No has iniciado sesión</b></div>";
+                        if (!isset($_SESSION['correo'])) { // si la varaible correo no esta definida se pone no has iniciado sesion
+                            echo "<div><b>No has iniciado sesiï¿½n</b></div>";
                         } else {
-                            print_r($_SESSION['correo']);
+                            print_r($_SESSION['correo']); // si la varaible correoesta definida se pone el correo
                         }
                         ?></a>
                         </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex" role="search">  <!-- formulario para la barra de busqueda -->
                   <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
@@ -79,9 +80,9 @@ echo "hola";
           </nav>
     </header>
     <main>
-        <section class="mainContainer">
-            <img src="../Images/Home/ORiginal 1.png" alt="">
-            <div class="mainText">
+        <section class="mainContainer">  <!-- main principal de la pagina  -->
+            <img src="../Images/Home/ORiginal 1.png" alt=""> <!-- imagen -->
+            <div class="mainText"> <!-- Titulo principal -->
                 <h5>Llego a Temuco</h5>
                 <h1>Tech Araucania</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum nostrum, eligendi quod labore
@@ -89,7 +90,7 @@ echo "hola";
                 <button><a href="products.html">Comprar Ahora</a></button>
             </div>
         </section>
-        <section class="mainCatalogue">
+        <section class="mainCatalogue"> <!-- Catalogo principal -->
             <h2>Busca en nuestro catalogo</h3>
                 <div class="mainCatalogueImages">
                     <div class="mainCatalogueImagesProduct">
@@ -107,7 +108,7 @@ echo "hola";
                     </div>
                 </div>
         </section>
-        <section class="mainProducts">
+        <section class="mainProducts"> <!-- seccion de nuestros productos -->
             <h2>Nuestros Productos</h2>
             <div class="mainGalery">
                 <div class="mainProduct">
@@ -119,7 +120,7 @@ echo "hola";
                     </div>
 
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -127,7 +128,7 @@ echo "hola";
                         <p class="price">CLP 250.000 <span class="past-price">350.000</span></p>
                     </div>
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -135,7 +136,7 @@ echo "hola";
                         <p class="price">CLP 250.000 <span class="past-price">350.000</span></p>
                     </div>
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -145,7 +146,7 @@ echo "hola";
                 </div>
             </div>
             <div class="mainGalery">
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -153,7 +154,7 @@ echo "hola";
                         <p class="price">CLP 250.000 <span class="past-price">350.000</span></p>
                     </div>
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -161,7 +162,7 @@ echo "hola";
                         <p class="price">CLP 250.000 <span class="past-price">350.000</span></p>
                     </div>
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -169,7 +170,7 @@ echo "hola";
                         <p class="price">CLP 250.000 <span class="past-price">350.000</span></p>
                     </div>
                 </div>
-                <div class="mainProduct">
+                <div class="mainProduct"> <!-- producto  -->
                     <img src="../Images/motherBoard.jpg" alt="">
                     <div class="mainProductText">
                         <h4>MSI PRO Z790</h4>
@@ -181,10 +182,9 @@ echo "hola";
             </div>
 
 
-        </section>
-        <footer class="footer">
-            <div class="footerText">
-                <h2>Tech Araucania</h2>
+        </section> 
+        <footer class="footer"> <!-- la parte baja de nuestra pagina, footer  -->
+            <div class="footerText"> <!-- Informacion de nuestra direccion-->
                 <p>400 Av. Alemania 312</p>
                 <p>Cautin</p>
                 <p>FA 42141 CL</p>
@@ -194,14 +194,14 @@ echo "hola";
                 <h3>Derechos reservados</h3>
 
             </div>
-            <div class="footerText">
+            <div class="footerText"> <!-- Links de la pagina -->
                 <h3>Links</h3>
                 <a href="">Home</a>
                 <a href="">Tienda</a>
                 <a href="">Nosotros</a>
                 <a href="">Contacto</a>
             </div>
-            <div class="footerText">
+            <div class="footerText"> <!-- Links de ayuda -->
                 <h3>Ayuda</h3>
                 <a href="">Opciones de pago</a>
                 <a href="">Devoluciones</a>
@@ -210,7 +210,7 @@ echo "hola";
 
 
             </div>
-            <div class="footerText">
+            <div class="footerText"> <!-- Formulario de la peticiones-->
                 <h3>Promociones</h3>
                 <input type="text" placeholder="Email">
                 <button>Subcribirse</button>
@@ -224,6 +224,8 @@ echo "hola";
 
 
 <script>
+
+      //si el usuario esta inicio sesion va mostrar cerra sesion, si no va a mostrar iniciar sesion
       var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
       var botonnn = document.getElementById("botonnnn");
 

@@ -1,6 +1,5 @@
 <?php
-include('sesiones.php');
-echo "hola";
+include('sesiones.php'); //se incluye el archivo de sesiones.php al archivo
 ?>
 
 <!--El archivo es de tipo html-->
@@ -19,56 +18,69 @@ echo "hola";
     <link rel="stylesheet" href="assets/Styles/history.css">
     <title>Historia</title> 
 </head>
-<body background="../Images/fondo3.jpg">
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body background="../Images/fondo3.jpg">  <!--Pone una imagen de fondo3 al fondo de la pagina-->
+
+    <header> <!--Este elemento es para crear la cabecera de nuestra pagina-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"> 
           <div class="container-fluid">
+            <!--el botón que se usa para la funcionalidad de abrir y cerrar la barra de navegación -->.
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0"> <!--lista no ordenada  -->
+              <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                   <a class="nav-link" aria-current="page" href="login.php" id="botonnnn">Iniciar Sesion</a>
                   </li> 
-                <li class="nav-item">
+                <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                   <a class="nav-link" aria-current="page" href="index.php">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                   <a class="nav-link" href="products.php">Productos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                   <a class="nav-link" href="services.php">Servicios</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown"> <!-- elemento de lista que contienen el link -->
                   <a class="nav-link dropdown-toggle active" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Nosotros
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="team.php">Quienes Somos</a></li>
-                  <li><a class="dropdown-item" href="history.php">Historia</a></li>
-                    <li><hr class="dropdown-divider"></li>
+                  <ul class="dropdown-menu"> <!-- elemento que se desplega para la navegacion -->
+
+                    <li> <!-- elemento de lista que contienen el link -->
+                      <a class="dropdown-item" href="team.php">Quienes Somos</a>
+                    </li>
+                    <li> <!-- elemento de lista que contienen el link -->
+                      <a class="dropdown-item" href="history.php">Historia</a>
+                    </li>
+                    <li> <!-- elemento de lista que contienen el link -->
+                      <hr class="dropdown-divider">
+                    </li>
                   </ul>
                 </li>
-                <li class="nav-item">
+
+                <li class="nav-item"><!-- elemento de lista que contienen el link -->
                   <a class="nav-link" href="contact.php">Contacto</a>
                 </li>
-                 <li class="nav-item">
+
+                <li class="nav-item"> <!-- elemento de lista que contienen el link -->
                     <a class="nav-link">
-                        <?php
+                        <?php //inicio el codigo php que hace la verificacion de inicio de sesion si no ma mostrar el codigo
                         if (!isset($_SESSION['correo'])) {
-                            echo "<div><b>No has iniciado sesi�n</b></div>";
+                            echo "<div><b>No has iniciado sesi�n</b></div>";
                         } else {
                             print_r($_SESSION['correo']);
                         }
                         ?></a>
-                 </li>
+                </li>
  
               </ul>
+
               <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
               </form>
+
             </div>
           </div>
         </nav>
@@ -87,6 +99,7 @@ echo "hola";
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <script>
+    //si el usuario esta definido va a poner true si no falso, si es verdadero va a poner Cerrar sesion
      var usuarioIniciado = <?php echo isset($_SESSION['correo']) ? 'true' : 'false'; ?>;
           var botonnn = document.getElementById("botonnnn");
           
