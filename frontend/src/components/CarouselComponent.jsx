@@ -1,10 +1,9 @@
 
-import producto1 from '../assets/img/producto1.jpg';
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import imagen1 from '../assets/img/producto1.jpg';
-import imagen2 from '../assets/img/producto2.jpg';
+import imagen1 from '../assets/img/producto1.png';
+import imagen2 from '../assets/img/producto2.png';
 import imagen3 from '../assets/img/producto5.png';
 
 function CarouselComponent() {
