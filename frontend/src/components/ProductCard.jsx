@@ -7,13 +7,13 @@ export default function ProductCard({ title, text, image }) {
 
 
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={image} />
-      <Card.Body>
-        <Card.Title>{title}</Card.Title>
-        <Card.Text>{text}</Card.Text>
-        <Button variant="primary">Agregar A carrito</Button>
-      </Card.Body>
-    </Card>
+    <div className="card" style={{width: '18rem'}}>
+        <img src={image} alt="" />
+        <div class="card-body">
+          <h5 class="card-title">{title}</h5>
+          <p class="card-text">{text}</p>
+          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+    </div>
   );
 }

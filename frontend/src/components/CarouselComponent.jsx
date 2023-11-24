@@ -1,48 +1,25 @@
-import Carousel from 'react-bootstrap/Carousel';
 
-import styles from './stylesComponents/Carousel.css'
-import { useEffect, useRef, useState } from 'react';
-import { data } from '../assets/data';
+import producto1 from '../assets/img/producto1.jpg';
+import React from 'react';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import imagen1 from '../assets/img/producto1.jpg';
+import imagen2 from '../assets/img/producto2.jpg';
+import imagen3 from '../assets/img/producto5.png';
 
 function CarouselComponent() {
-
-  const listRef = useRef();
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-
-  useEffect(() => {
-    const listNode = listRef.current;
-    const imgNode = listNode.querySelectorAll("li > img")[currentIndex];
-
-    if (imgNode) {
-      imgNode.scrollIntoView({
-        behavior: "smooth"
-      });
-    }
-
-  }, [currentIndex]);
   return (
-    <div className="main-container">
-      <div className="slider-container">
-
-        <div className="container-images">
-          <ul ref={listRef}>
-          {
-              data.map((item) => {
-                return <li key={item.id}>
-                  <img src={item.imgUrl} width={500} height={280} />
-                </li>
-              })
-            }
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div >
-
+    <Carousel>
+      <Carousel.Item>
+        <img className="d-block w-50 mx-auto" src={imagen1} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-50 mx-auto" src={imagen2}  />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img className="d-block w-50 mx-auto" src={imagen3}  />
+      </Carousel.Item>
+    </Carousel>
   );
 }
 
