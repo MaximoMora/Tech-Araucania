@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function InfoCardReverse({ title, text, image }) {
+export default function InfoCardReverse({ title,subtitle1,subtitle2, text1,text2, image }) {
 
 
     return (
@@ -13,7 +13,7 @@ export default function InfoCardReverse({ title, text, image }) {
                     className="featurette-image img-fluid mx-auto"
                     data-src="holder.js/500x500/auto"
                     alt="500x500"
-                    style={{ width: '500px', height: '400px' }}
+                    style={{ width: '500px', height: '750px', margin: "1rem" }}
                     src={image}
                     data-holder-rendered="true"
                 />
@@ -21,8 +21,15 @@ export default function InfoCardReverse({ title, text, image }) {
 
             
             <div className="col-md-7 order-md-1">
-                <h2 className="featurette-heading">{title}<span className="text-muted">Servioci</span></h2>
-                <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 className="featurette-heading col-6 my-5"><strong>{title}</strong></h2>
+                <div>
+                    <h4><strong>{subtitle1}</strong></h4>
+                    <p className="lead">{text1}</p>
+                </div>
+                <div>
+                    <h4><strong>{subtitle2}</strong></h4>
+                    <p className="lead">{text2}</p>
+                </div>
             </div>
 
 
