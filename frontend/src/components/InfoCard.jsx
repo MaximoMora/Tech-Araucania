@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-export default function InfoCard({ title,subtitle1,subtitle2, text1,text2, image, }) {
+export default function InfoCard({ title,subtitle1,subtitle2, text1,text2, image, height,width}) {
 
 
     return (
@@ -23,7 +23,7 @@ export default function InfoCard({ title,subtitle1,subtitle2, text1,text2, image
                     className="featurette-image img-fluid mx-auto"
                     data-src="holder.js/500x500/auto"
                     alt="500x500"
-                    style={{ width: '500px', height: '750px',margin: "1rem" }}
+                    style={{ width: {width}, height: {height},margin: "1rem" }}
                     src={image}
                     data-holder-rendered="true"
                 />

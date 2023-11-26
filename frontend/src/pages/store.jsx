@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "../components/NavBar";
+import Carousel from "../components/CarouselComponent";
+
 import ProductCard from "../components/ProductCard";
 import product1 from '../assets/img/producto1.jpg'
 import Footer from "../components/Footer";
@@ -14,6 +16,10 @@ export default function Store() {
 
             <div className="mb-5">
                 <NavBar />
+            </div>
+
+            <div>
+                <Carousel />
             </div>
 
 

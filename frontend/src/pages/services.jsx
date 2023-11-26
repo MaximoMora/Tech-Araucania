@@ -6,6 +6,7 @@ import product1 from '../assets/img/producto1.jpg'
 import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
 import InfoCardReverse from "../components/InfoCardReverse";
+import service1 from "../assets/img/service1.jpg";
 
 export default function Services() {
 
@@ -18,31 +19,15 @@ export default function Services() {
             </div>
 
 
-            <div className="bg-primary">
-                <Carousel />
-            </div>
-
-
-            <div className="">
-                <div className="row justify-content-around my-5 ">
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                </div>
-
-                <div className="row justify-content-around my-5 ">
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                    <ProductCard title={"Tarjeta"} text={"Es una tarjeta Grafica"} image={product1} />
-                </div>
-            </div>
-
-
-
             <div className="container justify-content-center ">
-                <InfoCard  title="Titulo" text ="texto bacan" image={product1} />
-                <InfoCardReverse  title="Titulo" text ="texto bacan" image={product1} />
-                <InfoCard  title="Titulo" text ="texto bacan" image={product1} />
+                <InfoCard  title="Servicios" subtitle1={"Tech Araucania"} text1={"lorem 4312412412421412"} text ="texto bacan" image={service1} />
+                <InfoCardReverse title="Servicios" subtitle1={"Tech Araucania"} text1={"lorem 4312412412421412"} text ="texto bacan" image={service1}/>
+                <InfoCard  title="Servicios" subtitle1={"Tech Araucania"} text1={"lorem 4312412412421412"} text ="texto bacan" image={service1} />
+                <InfoCardReverse title="Servicios" subtitle1={"Tech Araucania"} text1={"lorem 4312412412421412"} text ="texto bacan" image={service1} />
+            </div>
+
+            <div>
+
             </div>
 
 

@@ -39,9 +39,9 @@ export default function Home() {
 
             <div className="">
                 <div className="row justify-content-around my-5 ">
-                    <ProductCard title={"PELADN Radeon RX 5500XT 8GB GDDR6 PCI Express 4.0 Video Card"} text={"Precio: $115"} image={product1} />
-                    <ProductCard title={"WD_BLACK SN850X NVMe M.2 2280 2TB PCI-Express 4.0 "} text={"Precio $114"} image={product2} />
-                    <ProductCard title={"G.SKILL Trident Z5 Neo Series 32GB (2 x 16GB) PC RAM"} text={"Es una tarjeta Grafica"} image={product3} />
+                    <ProductCard title={"PELADN Radeon RX 5500XT 8GB GDDR6 PCI Express 4.0 Video Card"} text={"Precio: $115"} image={product1} width={"500px"} height={"750px"}/>
+                    <ProductCard title={"WD_BLACK SN850X NVMe M.2 2280 2TB PCI-Express 4.0 "} text={"Precio $114"} image={product2} width={"500px"} height={"750px"} />
+                    <ProductCard title={"G.SKILL Trident Z5 Neo Series 32GB (2 x 16GB) PC RAM"} text={"Es una tarjeta Grafica"} image={product3} width={"500px"} height={"750px"} />
                 </div>
 
                 <div className="row justify-content-around my-5 ">
