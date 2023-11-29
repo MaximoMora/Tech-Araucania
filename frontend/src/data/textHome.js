@@ -13,8 +13,7 @@ const textHome = {
       Con un enfoque en la innovación constante y un compromiso con la calidad,
       TEHC Araucania se destaca como tu socio confiable en el vasto universo de la tecnología.
       Explora nuestras ofertas y descubre cómo podemos llevar tu experiencia tecnológica al siguiente nivel.
-    `,
-    imagen: "url_de_la_imagen_company.jpg", // Agrega la URL de la imagen para la sección de la compañía
+    `,// Agrega la URL de la imagen para la sección de la compañía
   },
   textService: {
     title: "Nuestros Servicios",
@@ -30,7 +29,6 @@ const textHome = {
       especializado y soluciones adaptadas a tus requerimientos específicos. Confía en nosotros
       para mantener tus sistemas funcionando de manera óptima en todo momento.
     `,
-    imagen: "url_de_la_imagen_service.jpg", // Agrega la URL de la imagen para la sección de servicios
   },
   textProduct: {
     title: "Explora Nuestros Productos",
@@ -44,7 +42,6 @@ const textHome = {
       Desde potentes tarjetas gráficas hasta periféricos de vanguardia, TEHC Araucania
       ofrece productos que destacan por su rendimiento, confiabilidad y durabilidad.
     `,
-    imagen: "url_de_la_imagen_product.jpg", // Agrega la URL de la imagen para la sección de productos
   },
 };
 

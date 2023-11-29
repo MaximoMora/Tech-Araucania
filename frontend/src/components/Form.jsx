@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Form() {
     return (
 
-        <div className='container '>
+        <div className='container d-flex justify-content-center my-5'>
             <form style={{width: "26rem"}}>
                 <div data-mdb-input-init class="form-outline mb-4">
                     <input type="text" id="form4Example1" class="form-control" />

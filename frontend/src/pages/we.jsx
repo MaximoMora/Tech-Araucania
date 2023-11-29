@@ -9,7 +9,7 @@ import InfoCardReverse from "../components/InfoCardReverse";
 
 import tree from "../assets/img/tree.jpeg";
 import service from "../assets/img/service.jpeg";
-import product from "../assets/img/product.jpeg";
+import product from "../assets/img/imgProducts/producto6.jpg"
 
 import text from "../data/textHome.js"
 

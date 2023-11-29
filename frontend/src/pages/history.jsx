@@ -8,10 +8,10 @@ import InfoCardReverse from "../components/InfoCardReverse";
 
 
 import tree from "../assets/img/tree.jpeg";
-import service from "../assets/img/service.jpeg";
-import product from "../assets/img/product.jpeg";
+import trayectory from "../assets/img/imgHistory/trayectory.jpg"
+import present from "../assets/img/imgHistory/present.jpg"
 
-import text from "../data/textHome.js"
+import text from "../data/textHistory.js"
 
 
 
@@ -24,9 +24,9 @@ export default function History() {
             <NavBar/>
 
             <div className="container justify-content-center ">
-                <InfoCard  title={"HISTORIA"} subtitle1={text.textCompany.subtitle1} subtitle2={text.textCompany.subtitle2} text1={text.textCompany.text1} text2={text.textCompany.text2} image={tree} />
-                <InfoCardReverse  title={text.textProduct.title} subtitle1={text.textProduct.subtitle1} subtitle2={text.textProduct.subtitle2} text1={text.textProduct.text1} text2={text.textProduct.text2}  image={product} />
-                <InfoCard  title={text.textService.title} subtitle1={text.textService.subtitle1} subtitle2={text.textService.subtitle2} text1={text.textService.text1} text2={text.textService.text2} image={service} />
+                <InfoCard  title={text.textBeginnings.title} subtitle1={text.textBeginnings.subtitle1} subtitle2={text.textBeginnings.subtitle2} text1={text.textBeginnings.text1} text2={text.textBeginnings.text2} image={tree} />
+                <InfoCardReverse  title={text.textTrajectory.title} subtitle1={text.textTrajectory.subtitle1} subtitle2={text.textTrajectory.subtitle2} text1={text.textTrajectory.text1} text2={text.textTrajectory.text2}  image={trayectory} />
+                <InfoCard  title={text.textPresent.title} subtitle1={text.textPresent.subtitle1} subtitle2={text.textPresent.subtitle2} text1={text.textPresent.text1} text2={text.textPresent.text2} image={present} />
             </div>
 
 
