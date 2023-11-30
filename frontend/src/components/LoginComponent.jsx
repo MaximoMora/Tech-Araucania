@@ -1,23 +1,31 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
+function LoginComponent() {
+    const [Email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
 
-async function LoginComponent() {
-    try{
-        const [Email, setEmail] = useState("");
-        const [password, setPassword] = useState("");
-        const response = await fetch('/login');
-        if (response.ok){
-            console.log("a");
-        } else {
-            console.log("nooooo");
+    async function handleLogin(event) {
+        event.preventDefault();
+
+        try {
+            const response = await fetch('http://localhost:5500/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ Email, password })
+            });
+
+            if (response.ok) {
+                console.log("Inicio de sesión exitoso");
+            } else {
+                console.log("Error al iniciar sesión");
+            }
+        } catch (error) {
+            console.log("Problema: " + error);
         }
-        
-        }catch (error){
-            console.log("Problema: " + error)            
-        }
-
-
+    }
     return (
 
 
@@ -30,7 +38,7 @@ async function LoginComponent() {
 
                             <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
 
-                                <form style={{width: "23rem"}}>
+                                <form style={{width: "23rem"}} onSubmit={handleLogin}>
 
                                     <h3 class="fw-normal mb-3 pb-3" style={{font:"letter-spacing: 1px"}}>Login</h3>
 
@@ -45,7 +53,7 @@ async function LoginComponent() {
                                     </div>
 
                                     <div class="pt-1 mb-4">
-                                        <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
+                                        <button class="btn btn-info btn-lg btn-block" type="submit">Login</button>
                                     </div>
 
                                     <p>No tienes una cuenta? <a href="#!" class="link-info">
@@ -69,6 +77,6 @@ async function LoginComponent() {
     )
 }
 
-LoginComponent();
+export default LoginComponent
 
 
