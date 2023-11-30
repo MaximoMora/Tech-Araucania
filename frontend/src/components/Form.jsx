@@ -5,10 +5,12 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-func
+
 
 {/**Formulario de Contacto*/}
-
+const SendConsult = () => {
+    console.log("hola")
+}
 
 function Form() {
     return (

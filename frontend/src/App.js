@@ -24,7 +24,7 @@ function App() {
   return (
     <ShoppingCartProvider>
 
-      <BrowserRouter   >
+      <BrowserRouter  basename="/~maxmora/desarrollo_web/terceraEntrega/" >
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
