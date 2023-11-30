@@ -1,0 +1,33 @@
+import express from 'express';
+import mysql from 'mysql';
+import dotenv from 'dotenv'; // Mueve la importación de dotenv aquí
+
+dotenv.config();
+
+const app = express();
+const port = process.env.PORT || 5173; // Utiliza la variable de entorno PORT si está definida, de lo contrario, usa 5173
+
+const db = mysql.createConnection({
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME
+});
+
+db.connect((err) => {
+    if (err) {
+        throw err;
+    }
+    console.log('Conectado a la base de datos MySQL');
+});
+
+app.get('/server', (req, res) => {
+    db.query('SELECT * FROM usuario', (err, results) => {
+        if (err) throw err;
+        res.send(results);
+    });
+});
+
+app.listen(port, () => {
+    console.log(`Servidor en ejecución en http://localhost:${port}`);
+});

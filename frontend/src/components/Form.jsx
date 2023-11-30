@@ -4,6 +4,9 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+func
+
 {/**Formulario de Contacto*/}
 
 
@@ -29,7 +32,7 @@ function Form() {
 
 
 
-                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4">Enviar</button>
+                <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4" onClick={SendConsult}>Enviar</button>
             </form>
 
         </div>
