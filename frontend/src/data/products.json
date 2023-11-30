@@ -1,42 +1,102 @@
 
 
+
 [
     {
         "id": 1,
-        "name": "PELADN Radeon RX 5500XT",
-        "price": 215.000,
-        "imgUrl": "producto1.jpg"
+        "name": "SAPPHIRE PULSE RX 7900",
+        "price": 900000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/14-202-429-15.jpg"
     },
     {
-        "id" : 2,
-        "name" : "WD_BLACK SB850XT",
-        "price": 100.000,
-        "imgUrl": "producto2.jpg"
+        "id": 2,
+        "name": "SAMSUNG 980 PRO SSD 1TB",
+        "price": 80000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/20-147-790-V01.jpg"
     },
     {
         "id": 3,
-        "name": "Trident Z5 Ned RGB",
-        "price": 65.000,
-        "imgUrl": "producto3.jpg"
+        "name": "CORSAIR iCUE H150i ELITE ",
+        "price": 290000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/35-181-337-01.png"
     },
     {
         "id": 4,
-        "name": "DeepCool NST4",
-        "price": 40.000,
-        "imgUrl": "producto4.jpg"
+        "name": "G.SKILL Trident Z5 RGB 32GB ",
+        "price": 110000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/20-374-358-10.png"
     },
     {
         "id": 5,
-        "name" : "ROB STRIX B550-G Gaming",
-        "price": 180.000,
-        "imgUrl": "producto5.png"
-
+        "name": "Dark Power 13 1000W ATX ",
+        "price": 200000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/A68VS2301270XTEZS9A.jpg"
     },
     {
         "id": 6,
-        "name": "Z790 Gaming x AX",
-        "price": 220.000,
-        "imgUrl": "producto6.jpg"
+        "name": "AMD Ryzen 7 7700X",
+        "price": 320000,
+        "imgUrl": "https://c1.neweggimages.com/ProductImageCompressAll1280/19-113-768-01.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Fractal Design Torrent Black E-ATX",
+        "price":190000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/11-352-143-01.jpg"
+    },
+    {
+        "id": 8,
+        "name": "MSI Ventus GeForce RTX 3060 12GB ",
+        "price":280000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/14-137-632-03.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Sapphire Pulse AMD Radeon RX 6700 XT",
+        "price":300000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/14-202-400-01.jpg"
+    },
+    {
+        "id": 10,
+        "name": "MSI Suprim GeForce RTX 4090 24GB",
+        "price":2400000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/14-137-759-34.png"
+    },
+    {
+        "id": 11,
+        "name": "Intel Core i7-13700K - Core i7 13th ",
+        "price":345000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/19-118-414-V01.jpg"
+    },
+    {
+        "id": 12,
+        "name": "AMD Ryzen 7 7700X",
+        "price":320000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/19-113-768-01.jpg"
+    },
+    {
+        "id": 13,
+        "name": "AMD Ryzen 7 7800X3D ",
+        "price":358000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/19-113-793-03.png"
+    },
+    {
+        "id": 14,
+        "name": "MSI MPG B650 EDGE WIFI AM5",
+        "price":260000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/14-137-759-34.png"
+    },
+    {
+        "id": 15,
+        "name": "MSI MAG B550 TOMAHAWK",
+        "price":170000,
+        "imgUrl":"https://c1.neweggimages.com/ProductImageCompressAll1280/13-144-326-V01.jpg"
     }
+
+
+
+
+
+
 
 ]

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Home from './pages/home';
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Store from './pages/store';
 import Service from "./pages/services";
 import We from './pages/we';
@@ -17,10 +18,13 @@ import Register from "./pages/register";
 
 import { ShoppingCartProvider } from "./contexts/ShoppingCartContext";
 
+//#basename="/~maxmora/desarrollo_web/tech/"
+
 function App() {
   return (
     <ShoppingCartProvider>
-      <BrowserRouter>
+
+      <BrowserRouter   >
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -35,6 +39,9 @@ function App() {
           <Route path="/registro" element={<Register />} />
 
         </Routes>
+
+        <Footer/>
+
       </BrowserRouter>
 
     </ShoppingCartProvider>

@@ -1,18 +1,13 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
-import ProductCard from "../components/ProductCard";
-import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
 import InfoCardReverse from "../components/InfoCardReverse";
-
-
-
-import tree from "../assets/img/tree.jpeg";
-import trayectory from "../assets/img/imgHistory/trayectory.jpg"
-import present from "../assets/img/imgHistory/present.jpg"
-
 import text from "../data/textHistory.js"
 
+
+{/**se importa tres imagenes para el uso en la pagina historia */}
+const tree = "https://images.pexels.com/photos/6590725/pexels-photo-6590725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const trayectory = "https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const present = "https://images.pexels.com/photos/7679452/pexels-photo-7679452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
 
 
 export default function History() {
@@ -22,6 +17,7 @@ export default function History() {
         <div className="container">
 
 
+            {/**se llama al componente InfoCard y infoCardReverse para dar informacion de historia de tech Araucania */}
 
             <div className="container justify-content-center ">
                 <InfoCard  title={text.textBeginnings.title} subtitle1={text.textBeginnings.subtitle1} subtitle2={text.textBeginnings.subtitle2} text1={text.textBeginnings.text1} text2={text.textBeginnings.text2} image={tree} />

@@ -1,17 +1,15 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
 import InfoCardReverse from "../components/InfoCardReverse";
-import service1 from "../assets/img/imgProducts/producto6.jpg"
-
 import text from "../data/textServices.js"
 
-import service from "../assets/img/imgServices/services.jpg"
-import security from "../assets/img/imgServices/security.jpg"
-import hacking from "../assets/img/imgServices/hacking.jpg"
-import learn from "../assets/img/imgServices/learn.jpg"
-import mantenance from "../assets/img/imgServices/mantenance.jpg"
+
+const service = "https://images.pexels.com/photos/7682088/pexels-photo-7682088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const security = "https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const hacking = "https://images.pexels.com/photos/5380649/pexels-photo-5380649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const learn =  "https://images.pexels.com/photos/4012966/pexels-photo-4012966.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+const mantenance = "https://images.pexels.com/photos/4792719/pexels-photo-4792719.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+
 
 export default function Services() {
 
@@ -31,12 +29,6 @@ export default function Services() {
 
             </div>
 
-            <div>
-
-            </div>
-
-
-            <Footer />
         </div>
     );
 }

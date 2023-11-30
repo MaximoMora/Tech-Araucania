@@ -1,11 +1,10 @@
 
+
+{/**Footer de la pagina */}
 function Footer() {
     return (
         <div className="container">
             <footer class="text-center text-lg-start bg-body-tertiary text-muted">
-
-
-
 
                 <section class="">
                     <div class="container text-center text-md-start mt-5 pt-3 ">
@@ -23,6 +22,7 @@ function Footer() {
                             </div>
 
 
+                             {/**Los Links a los productos de la pagina */}
                             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     Productos
@@ -41,6 +41,8 @@ function Footer() {
                                 </p>
                             </div>
 
+
+                            {/**Los Links a Servicios de la pagina */}
                             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                 <h6 class="text-uppercase fw-bold mb-4">
                                     Servicios
@@ -59,6 +61,8 @@ function Footer() {
                                 </p>
                             </div>
 
+
+                            {/**Informacion de la ubicacion y contacto */}
                             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                                 <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
@@ -75,6 +79,9 @@ function Footer() {
 
                     </div>
                 </section>
+
+
+                {/**Marca de la pagina Tech Araucania */}
 
                 <div class="text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
                     © 2023 Copyright:

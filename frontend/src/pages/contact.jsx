@@ -17,6 +17,9 @@ export default function Contact() {
 
             </div>
             
+
+            {/**se llama al componente Form para pedir informacion */}
+
             <div  >
                 <Form />
             </div>

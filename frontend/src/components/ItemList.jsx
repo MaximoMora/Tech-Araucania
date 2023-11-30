@@ -2,12 +2,17 @@ import React from 'react';
 import storeItem from '../data/products.json';
 import { Item } from './Item';
 
-export const ItemList = () => {
+export const ItemList = ({indexLimit}) => {
+
+  {/**va a contar por grupo de 3 en 3, que va a mostrar la pagina */}
+
   const groupedProducts = [];
-  for (let i = 0; i < storeItem.length; i += 3) {
+  for (let i = 0; i < indexLimit; i += 3) {
     groupedProducts.push(storeItem.slice(i, i + 3));
   }
 
+
+  {/**va a mapear o pasar por todo la lista grouped, cada pequeño grupo tiene sus productos y los iteran*/}
   return (
     <div className=''>
       {groupedProducts.map((group, groupIdx) => (
