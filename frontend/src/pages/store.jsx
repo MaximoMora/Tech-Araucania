@@ -5,6 +5,8 @@ import { ItemList } from "../components/ItemList";
 export default function Store() {
 
 
+
+    {/**Pagina Store que tiene el compoecarousel*/}
     return (
         <div className="container">
 

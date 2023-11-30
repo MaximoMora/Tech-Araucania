@@ -21,7 +21,7 @@ export default function Team() {
             </div>
 
             <div>
-                <InfoCard title={"Javier Poblano"} text1={"Javier Poblano es un estudiante entusiasta de primer año en la Universidad Católica de Temuco, donde está cursando la carrera de Informática. Nacido en Pucon, Javier muestra un gran interés por la tecnología y la informática desde una edad temprana, lo que lo motivó a seguir esta carrera."} image={javier}/>
+                <InfoCard title={"Javier Poblete"} text1={"Javier Poblano es un estudiante entusiasta de primer año en la Universidad Católica de Temuco, donde está cursando la carrera de Informática. Nacido en Pucon, Javier muestra un gran interés por la tecnología y la informática desde una edad temprana, lo que lo motivó a seguir esta carrera."} image={javier}/>
             </div>
 
             <div>
