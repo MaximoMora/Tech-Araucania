@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Form from "../components/Form"
 import NavBar from "../components/NavBar";
 
-import { ItemList } from "../components/ItemList";
 
 export default function Contact() {
 
@@ -20,10 +19,6 @@ export default function Contact() {
             
             <div  >
                 <Form />
-            </div>
-
-            <div>
-                <ItemList />
             </div>
 
 

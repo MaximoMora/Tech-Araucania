@@ -6,15 +6,6 @@ import InfoCard from "../components/InfoCard";
 import InfoCardReverse from "../components/InfoCardReverse";
 import Footer from "../components/Footer";
 
-
-import product1 from "../assets/img/imgProducts/producto1.jpg"
-import product2 from '../assets/img/imgProducts/producto2.jpg';
-import product3 from "../assets/img/imgProducts/producto3.jpg";
-import product4 from "../assets/img/imgProducts/producto4.jpg";
-import product5 from "../assets/img/imgProducts/producto5.png";
-import product6 from "../assets/img/imgProducts/producto6.jpg";
-
-
 import tree from "../assets/img/tree.jpeg";
 import service from "../assets/img/service.jpeg";
 import product from "../assets/img/imgProducts/producto6.jpg";

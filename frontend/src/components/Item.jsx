@@ -3,72 +3,83 @@ import React, { useContext } from 'react'
 import picture from '../assets/img/imgProducts/producto2.jpg'
 import { CartContext } from '../contexts/ShoppingCartContext'
 
-export const Item = ({name,price,id,imgUrl}) => {
+export const Item = ({ name, price, id, imgUrl }) => {
 
   const [cart, setCart] = useContext(CartContext)
 
-    const AddToCart = () => {
+  const AddToCart = () => {
+    setCart((currentItems) => {
+      const isItemFound = currentItems.find((item) => item.id === id);
 
-      setCart((currentItems) => {
-        const isItemFound = currentItems.find((item) => item.id === item.id)
-        
-        if (isItemFound) {
+      if (isItemFound) {
+        return currentItems.map((item) => {
+          if (item.id === id) {
+            return { ...item, quantity: item.quantity + 1 };
+          } else {
+            return item;
+          }
+        });
+      } else {
+        return [...currentItems, { id, quantity: 1, price }];
+      }
+    });
+  };
 
-          return currentItems.map((item) => {
-            if (item.id === item.id) {
-              return {...item,quantity: item.quantity + 1}
-
-              
-            } else {
-              return item
-            }
-          });
-        
-          
+  const RemoveItemFromCart = () => {
+    setCart((currentItems) => {
+      return currentItems.map((item) => {
+        if (item.id === id) {
+          return { ...item, quantity: item.quantity - 1 };
         } else {
-          return [...currentItems, {id, quantity: 1, price}]
+          return item;
         }
+      }).filter((item) => item.quantity !== 0);
+    });
+  };
 
-      })
-        
-    }
+  const getQuantityById = (id) => {
+    return cart.find((item) => item.id === id)?.quantity || 0;
+  };
 
-    const RemoveItemFromCart = (id) => {
+  const quantityPerItem = getQuantityById(id);
 
-      setCart((currentItems) => {
-        if (currentItems.find((item) => item.id == id)?.quantity === 1 ){
-          return currentItems.filter((item) => item.id != item.id)
-          
-        } else {
-          return currentItems.map((item) => {
-            if (item.id === item.id) {
 
-              return {...item, quantity: item.quantity - 1}
-              
-            }
-          })
-          
-        }
-      })
-    }
-
-    const GetQuantityById = (id) => {
-
-    }
   return (
-    <div className=' m-2'>
+    <div className='bg-success m-2'>
 
-        <div>{name}</div>
-        <div >
-            <img  src={require(`../assets/img/imgProducts/${imgUrl}`)} width={"250px"} alt={name}/>
+      {quantityPerItem > 0 && (
+        <div className="item-quantity">{quantityPerItem}</div>
+      )}
 
-        </div>
-        <div>
 
-            ${price}
 
-        </div>
-        <button onClick={() => AddToCart()}>Agregar a Carro</button>
+      <div>{name}</div>
+      <div >
+        <img src={require(`../assets/img/imgProducts/${imgUrl}`)} width={"250px"} alt={name} />
+
+      </div>
+      <div>
+
+        ${price}
+
+      </div>
+
+      {quantityPerItem === 0 ? (
+        <button className="item-add-button" onClick={() => AddToCart()}>
+          Agregar al Carro
+        </button>
+      ) : (
+        <button className="item-plus-button" onClick={() => AddToCart()}>
+          +
+        </button>
+      )}
+
+      {quantityPerItem > 0 && (
+        <button className="item-minus-button" onClick={() => RemoveItemFromCart(id)}>
+          -
+        </button>
+      )}
+
     </div>
   )
 }
