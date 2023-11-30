@@ -1,7 +1,8 @@
 import { NavLink } from "react-router-dom";
 
 function RegisterComponent() {
-
+    const [Email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     return (
         <div className="container">
 
@@ -23,7 +24,7 @@ function RegisterComponent() {
                                                 <div class="d-flex flex-row align-items-center mb-4">
                                                     <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                                                     <div class="form-outline flex-fill mb-0">
-                                                        <input type="email" id="form3Example3c" class="form-control" />
+                                                        <input type="email" id="form3Example3c" class="form-control" value={ Email } onChange={(e) => setEmail(e.target.value)}/>
                                                         <label class="form-label" for="form3Example3c">Tu contraseña</label>
                                                     </div>
                                                 </div>
@@ -31,7 +32,7 @@ function RegisterComponent() {
                                                 <div class="d-flex flex-row align-items-center mb-4">
                                                     <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                                     <div class="form-outline flex-fill mb-0">
-                                                        <input type="password" id="form3Example4c" class="form-control" />
+                                                        <input type="password" id="form3Example4c" class="form-control" value= { password} onChange={(e) => setPassword(e.target.value)}/>
                                                         <label class="form-label" for="form3Example4c">Tu contraseña</label>
                                                     </div>
                                                 </div>
@@ -39,7 +40,7 @@ function RegisterComponent() {
                                                 <div class="d-flex flex-row align-items-center mb-4">
                                                     <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                                     <div class="form-outline flex-fill mb-0">
-                                                        <input type="password" id="form3Example4cd" class="form-control" />
+                                                        <input type="password" id="form3Example4cd" class="form-control" value= { password} onChange={(e) => setPassword(e.target.value)}/>
                                                         <label class="form-label" for="form3Example4cd">Confirma Tu contraseña</label>
                                                     </div>
                                                 </div>

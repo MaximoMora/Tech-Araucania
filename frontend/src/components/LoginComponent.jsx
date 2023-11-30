@@ -1,7 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
 
 function LoginComponent() {
-
+    const [Email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     return (
 
 
@@ -19,12 +22,12 @@ function LoginComponent() {
                                     <h3 class="fw-normal mb-3 pb-3" style={{font:"letter-spacing: 1px"}}>Login</h3>
 
                                     <div class="form-outline mb-4">
-                                        <input type="email" id="form2Example18" class="form-control form-control-lg" />
+                                        <input type="email" id="form2Example18" class="form-control form-control-lg" value={Email} onChange={(e) => setEmail(e.target.value)}/>
                                         <label class="form-label" for="form2Example18">Email</label>
                                     </div>
 
                                     <div class="form-outline mb-4">
-                                        <input type="password" id="form2Example28" class="form-control form-control-lg" />
+                                        <input type="password" id="form2Example28" class="form-control form-control-lg" value={password} onChange={(e) => setEmail(e.target.value)}/>
                                         <label class="form-label" for="form2Example28">Contraseña</label>
                                     </div>
 
