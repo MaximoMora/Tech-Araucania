@@ -21,7 +21,7 @@ export default function History() {
     return (
         <div className="container">
 
-            <NavBar/>
+
 
             <div className="container justify-content-center ">
                 <InfoCard  title={text.textBeginnings.title} subtitle1={text.textBeginnings.subtitle1} subtitle2={text.textBeginnings.subtitle2} text1={text.textBeginnings.text1} text2={text.textBeginnings.text2} image={tree} />

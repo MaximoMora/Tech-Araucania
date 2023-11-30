@@ -11,8 +11,7 @@ export default function Contact() {
     return (
         <div className="container ">
             
-            
-            <NavBar />
+
 
             <div className="container d-flex justify-content-center">
                 <h1>Contacto</h1>

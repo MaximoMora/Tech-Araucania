@@ -19,9 +19,7 @@ export default function Services() {
     return (
         <div className="container">
 
-            <div className="mb-5">
-                <NavBar />
-            </div>
+     
 
 
             <div className="container justify-content-center ">

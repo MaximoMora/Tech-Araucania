@@ -15,9 +15,7 @@ export default function Store() {
     return (
         <div className="container">
 
-            <div className="mb-5">
-                <NavBar />
-            </div>
+       
 
             <div>
                 <Carousel />

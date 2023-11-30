@@ -20,6 +20,7 @@ import service from "../assets/img/service.jpeg";
 import product from "../assets/img/imgProducts/producto6.jpg";
 
 import text from "../data/textHome.js"
+import { ItemList } from "../components/ItemList";
 
 export default function Home() {
 
@@ -27,9 +28,6 @@ export default function Home() {
     return (
         <div className="container">
 
-            <div className="mb-5">
-                <NavBar />
-            </div>
 
 
             <div >
@@ -37,18 +35,9 @@ export default function Home() {
             </div>
 
 
-            <div className="">
-                <div className="row justify-content-around my-5 ">
-                    <ProductCard title={"PELADN Radeon RX 5500XT 8GB GDDR6 PCI Express 4.0 Video Card"} text={"Precio: $115"} image={product1} width={"500px"} height={"750px"}/>
-                    <ProductCard title={"WD_BLACK SN850X NVMe M.2 2280 2TB PCI-Express 4.0 "} text={"Precio $114"} image={product2} width={"500px"} height={"750px"} />
-                    <ProductCard title={"G.SKILL Trident Z5 Neo Series 32GB (2 x 16GB) PC RAM"} text={"Es una tarjeta Grafica"} image={product3} width={"500px"} height={"750px"} />
-                </div>
+            <div className="my-5">
+                    <ItemList/>
 
-                <div className="row justify-content-around my-5 ">
-                    <ProductCard title={"DeepCool AK620 High-Performance CPU Cooler, Dual-Tower Design"} text={"Precio: $63 "} image={product4} />
-                    <ProductCard title={"CORSAIR RMe Series RM1200e ATX Power Supply"} text={"Precio $169"} image={product5} />
-                    <ProductCard title={"GIGABYTE Z790 GAMING X AX LGA 1700 Intel Z790 ATX "} text={"Precio: $199"} image={product6} />
-                </div>
             </div>
 
 

@@ -3,10 +3,40 @@
 [
     {
         "id": 1,
-        "name": "Book",
-        "price": 10,
+        "name": "PELADN Radeon RX 5500XT",
+        "price": 215.000,
         "imgUrl": "producto1.jpg"
+    },
+    {
+        "id" : 2,
+        "name" : "WD_BLACK SB850XT",
+        "price": 100.000,
+        "imgUrl": "producto2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Trident Z5 Ned RGB",
+        "price": 65.000,
+        "imgUrl": "producto3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "DeepCool NST4",
+        "price": 40.000,
+        "imgUrl": "producto4.jpg"
+    },
+    {
+        "id": 5,
+        "name" : "ROB STRIX B550-G Gaming",
+        "price": 180.000,
+        "imgUrl": "producto5.png"
 
+    },
+    {
+        "id": 6,
+        "name": "Z790 Gaming x AX",
+        "price": 220.000,
+        "imgUrl": "producto6.jpg"
     }
 
 ]

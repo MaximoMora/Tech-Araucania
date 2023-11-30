@@ -15,9 +15,7 @@ export default function Team() {
     return (
         <div className="container">
 
-            <div>
-                <NavBar></NavBar>
-            </div>
+        
 
             <div>
                 <h1>Equipo</h1>

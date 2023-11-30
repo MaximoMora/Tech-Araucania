@@ -20,7 +20,7 @@ export default function We() {
     return (
         <div className="container">
 
-            <NavBar/>
+
 
             <div className="container justify-content-center ">
                 <InfoCard  title={"QUIENES SOMOS"} subtitle1={text.textCompany.subtitle1} subtitle2={text.textCompany.subtitle2} text1={text.textCompany.text1} text2={text.textCompany.text2} image={tree} />
